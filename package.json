@@ -1,0 +1,8 @@
+{
+  "name": "bioma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gabegodoy/Bioma-Inc.git",
+  "author": "godoy-nexum <gabriel.godoy@nexum.com.br>",
+  "license": "MIT"
+}
