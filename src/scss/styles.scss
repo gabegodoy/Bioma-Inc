@@ -1,5 +1,13 @@
 @import '_sidebar';
 @import '_components';
+@import '_footerAndHeader';
 
-@import '_projectPageProjectRow';
+@import '_projectsPage';
+@import '_project';
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.d-none{
+    display: none;
+}

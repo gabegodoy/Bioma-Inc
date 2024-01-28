@@ -1,0 +1,23 @@
+.footer{
+    
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10vh 8vw;
+        background: #fff;
+        img{
+            height: 3rem;
+            width: auto;
+        }
+    }
+}
+
+.header__img{
+    position: absolute;
+    top: 1rem;
+    left: calc(50vw - 3.5rem);
+    width: 7rem;
+    height: auto;
+
+}

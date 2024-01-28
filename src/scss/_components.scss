@@ -11,3 +11,28 @@
         }
     }
 }
+
+.borders-outside{
+    position: fixed;
+    z-index: -1;
+    width: 82.75vw;
+    height: 100%;
+
+    border-left: solid #D9D9D999 1px;
+    margin-left: 8vw;
+    border-right: solid #D9D9D999 1px;
+    margin-right: 8vw;
+}
+
+.borders-inside{
+    position: fixed;
+    z-index: -1;
+    width: 30vw;
+    height: 100%;
+    
+    border-left: solid #D9D9D999 1px;
+    margin-left: 35vw;
+
+    border-right: solid #D9D9D999 1px;
+
+}

@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .nav {
   width: 100%;
   height: 100px;
-  position: relative;
+  position: sticky;
   z-index: 1000;
+  top: 0;
 }
 
 .nav .trigger {
@@ -21,7 +23,8 @@
   width: 100%;
   height: 6px;
   transform: translateY(12px);
-  background-color: #292d34;
+  background-color: #808082;
+  background-color: #525252;
   display: block;
   border-radius: 9px;
 }
@@ -32,7 +35,8 @@
   content: "";
   width: 100%;
   height: 6px;
-  background-color: #292d34;
+  background-color: #525252;
+  background-color: #808082;
   display: block;
   border-radius: 9px;
 }
@@ -123,6 +127,7 @@
   color: #fff;
   z-index: 500;
   background: linear-gradient(45deg, rgb(245, 205, 81) 0%, rgb(247, 206, 81) 100%);
+  background: whitesmoke;
   transition: transform 0.5s;
   transform: translateX(100%);
   overflow-y: auto;
@@ -267,8 +272,49 @@
   color: white;
 }
 
+.borders-outside {
+  position: fixed;
+  z-index: -1;
+  width: 82.75vw;
+  height: 100%;
+  border-left: solid rgba(217, 217, 217, 0.6) 1px;
+  margin-left: 8vw;
+  border-right: solid rgba(217, 217, 217, 0.6) 1px;
+  margin-right: 8vw;
+}
+
+.borders-inside {
+  position: fixed;
+  z-index: -1;
+  width: 30vw;
+  height: 100%;
+  border-left: solid rgba(217, 217, 217, 0.6) 1px;
+  margin-left: 35vw;
+  border-right: solid rgba(217, 217, 217, 0.6) 1px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10vh 8vw;
+  background: #fff;
+}
+.footer__container img {
+  height: 3rem;
+  width: auto;
+}
+
+.header__img {
+  position: absolute;
+  top: 1rem;
+  left: calc(50vw - 3.5rem);
+  width: 7rem;
+  height: auto;
+}
+
 .projects__container {
-  padding: 5vh 8vw;
+  padding: 15vh 8vw 5vh 8vw;
 }
 .projects__container .project__container {
   display: flex;
@@ -302,7 +348,7 @@
 .projects__container .project__info__overtitle {
   color: #222;
   font-family: "Myriad Pro";
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -312,7 +358,7 @@
 .projects__container .project__info__title {
   color: #222;
   font-family: Inter;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -360,4 +406,197 @@
 .projects__container .project__image__footer__info p {
   color: #ffffff;
   font-family: Inter;
+}
+.projects__container .projects__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 8rem;
+}
+.projects__container .projects__footer__item {
+  width: 25%;
+}
+.projects__container .projects__footer__item__title {
+  color: #222;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.projects__container .projects__footer__item__title::before {
+  content: "+";
+  margin-right: 1rem;
+}
+.projects__container .projects__footer__item__info {
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__project {
+  position: absolute;
+  top: 1rem;
+  width: calc(100% - 8vw);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 19%;
+  left: 8vw;
+}
+.header__img__bioma {
+  height: 7rem;
+  width: auto;
+}
+.header__img__project {
+  height: 5rem;
+  width: auto;
+}
+
+.project__page__container {
+  padding: 10vh 8vw;
+  padding-top: 15vh;
+}
+.project__page__overtitle {
+  color: #595959;
+  font-family: "Myriad Pro";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 0.75rem;
+}
+.project__page__title {
+  color: #595959;
+  font-family: "Inter";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.project__page__subtitle {
+  color: #595959;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 4.8px;
+}
+.project__page__grid__container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.project__page__grid__img__container {
+  aspect-ratio: 3/4;
+  width: calc(25% - 0.75rem);
+  background-color: red;
+  position: relative;
+}
+.project__page__grid__img__pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.project__page__view-more__container {
+  display: flex;
+  justify-content: center;
+}
+.project__page__specs__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 0;
+}
+.project__page__specs__item {
+  margin-left: 1.5rem;
+}
+.project__page__specs__item__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 30%;
+  height: auto;
+}
+.project__page__specs__item__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.project__page__specs__item__subtitle {
+  color: #000;
+  font-family: Inter;
+  font-size: 0.825rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.project__page__description__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 2.5rem;
+}
+.project__page__description__img {
+  aspect-ratio: 3/4;
+  width: 40%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.project__page__description__info__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 160%; /* 64px */
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.project__page__description__info__subtitle {
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 38.4px */
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+.project__page__description__info__text {
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%; /* 38.4px */
+  text-transform: capitalize;
+  text-align: justify;
+}
+
+.d-none {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

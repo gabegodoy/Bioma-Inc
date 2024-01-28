@@ -1,8 +1,9 @@
 .nav {
     width: 100%;
     height: 100px;
-    position: relative;
+    position: sticky;
     z-index: 1000;
+    top: 0;
 }
 
 .nav .trigger {
@@ -21,7 +22,8 @@
     width: 100%;
     height: 6px;
     transform: translateY(12px);
-    background-color: #292d34;
+    background-color: #808082;
+    background-color: #525252;
     display: block;
     border-radius: 9px;
 }
@@ -32,7 +34,8 @@
     content: "";
     width: 100%;
     height: 6px;
-    background-color: #292d34;
+    background-color: #525252;
+    background-color: #808082;
     display: block;
     border-radius: 9px;
 }
@@ -135,6 +138,7 @@
     color: #fff;
     z-index: 500;
     background: linear-gradient(45deg, rgb(245, 205, 81) 0%, rgb(247, 206, 81) 100%);
+    background: whitesmoke;
     transition: transform 0.5s;
     transform: translateX(100%);
     overflow-y: auto;

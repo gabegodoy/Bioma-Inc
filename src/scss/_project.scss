@@ -1,0 +1,179 @@
+.header{
+
+    &__project{
+        position: absolute;
+        top: 1rem;
+        // left: calc(50vw - 7rem);
+        width: calc(100% - 8vw);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 19%;
+
+        left: 8vw;
+    }
+    &__img__bioma{
+        height: 7rem;
+        width: auto;
+    }
+    &__img__project{
+        height: 5rem;
+        width: auto;
+
+    }
+}
+
+.project__page{
+    &__container{
+        padding: 10vh 8vw;
+        padding-top: 15vh;
+    }
+
+    &__overtitle{
+        color: #595959;
+        font-family: "Myriad Pro";
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 4.8px;
+        margin-bottom: .75rem;
+    }
+    &__title{
+        color: #595959;
+        font-family: "Inter";
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 1rem;
+    }
+    &__subtitle{
+        color: #595959;
+        font-family: "Inter";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%; /* 33.6px */
+        letter-spacing: 4.8px;
+    }
+    &__grid{
+        &__container{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        &__img{
+            &__container{
+                aspect-ratio: 3/4;
+                width: calc(25% - .75rem);
+                background-color: red;
+                position: relative;
+            }
+            &__blur{
+
+            }
+            &__pic{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+            }
+        }
+
+    }
+    &__view-more__container{
+        display: flex;
+        justify-content: center;
+    }
+    &__specs{
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5rem 0;
+        }
+        &__item{
+            margin-left: 1.5rem;
+            &__container{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                width: 30%;
+                height: auto;
+            }   
+            &__title{
+                color: #000;
+                font-family: Inter;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+            }   
+            &__subtitle{
+                color: #000;
+                font-family: Inter;
+                font-size: .825rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                text-transform: uppercase;
+            }   
+        }
+    }
+    &__description{
+        &__container{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 2rem;
+            padding-top: 2.5rem;
+        }
+        &__img{
+            aspect-ratio: 3/4;
+            width: 40%;
+            height: auto;
+            object-fit: cover;
+            object-position: bottom;
+        }
+        &__info{
+            &__title{
+                color: #000;
+                font-family: Inter;
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 160%; /* 64px */
+                text-transform: capitalize;
+                margin-bottom: 1rem;
+            }
+            &__subtitle{
+                color: #000;
+                font-family: Inter;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 38.4px */
+                text-transform: capitalize;
+                margin-bottom: 2rem;
+                text-align: justify;
+            }
+            &__text{
+                color: #000;
+                font-family: Inter;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 160%; /* 38.4px */
+                text-transform: capitalize;
+                text-align: justify;
+            }
+        }
+    }
+}
