@@ -624,29 +624,42 @@
   height: 38.375rem;
   flex-shrink: 0;
 }
+.contact__page__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  gap: 1.5rem;
+}
 .contact__page__info__address h3, .contact__page__info__tel h3, .contact__page__info__email h3 {
   color: #222;
   font-family: Inter;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
 }
 .contact__page__info__address p, .contact__page__info__tel p, .contact__page__info__email p {
-  width: 28.125rem;
   color: #000;
   font-family: Inter;
-  font-size: 1.375rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 2.5rem;
+  margin-top: 0.25rem;
+}
+.contact__page__form__message {
+  width: 30%;
+}
+.contact__page__form__contacts {
+  width: 30%;
 }
 .contact__page__form form {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 .contact__page__form input[type=text],
@@ -654,16 +667,17 @@
 .contact__page__form input[type=tel] {
   background-color: #f2f2f2; /* Fundo cinza */
   padding: 20px;
+  box-sizing: border-box;
   border: none;
   border-radius: 5px;
-  margin: 1rem 3.5rem;
-  width: 30rem;
+  margin-bottom: 1rem;
+  width: 100%;
   flex-shrink: 0;
 }
 .contact__page__form input[type=text]::-moz-placeholder, .contact__page__form input[type=email]::-moz-placeholder, .contact__page__form input[type=tel]::-moz-placeholder {
   color: #848484;
   font-family: Inter;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -673,7 +687,7 @@
 .contact__page__form input[type=tel]::placeholder {
   color: #848484;
   font-family: Inter;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -681,17 +695,18 @@
 .contact__page__form textarea {
   background-color: #f2f2f2; /* Fundo cinza */
   padding: 20px;
+  box-sizing: border-box;
   border: none;
   border-radius: 5px;
-  margin: 1rem;
+  margin-bottom: 1rem;
   height: 138px;
-  width: 401px;
+  width: 100%;
   flex-shrink: 0;
 }
 .contact__page__form textarea::-moz-placeholder {
   color: #848484;
   font-family: Inter;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -699,7 +714,7 @@
 .contact__page__form textarea::placeholder {
   color: #848484;
   font-family: Inter;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
