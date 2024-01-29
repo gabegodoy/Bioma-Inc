@@ -962,12 +962,6 @@
   border: solid 1px #000000;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
 .swiper-container {
   position: relative;
   width: 100%;
