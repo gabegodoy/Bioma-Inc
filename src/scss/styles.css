@@ -271,6 +271,20 @@
   background-color: #1C1C1C;
   color: white;
 }
+.bm-button--green {
+  border: solid #1C1C1C 1px;
+  padding: 1rem 2.5rem;
+  transition: 0.5s ease-in-out;
+  background-color: #8BC441;
+  color: white;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.bm-button--green:hover {
+  background-color: transparent;
+  color: black;
+}
 
 .borders-outside {
   position: fixed;
@@ -595,6 +609,205 @@
   line-height: 160%; /* 38.4px */
   text-transform: capitalize;
   text-align: justify;
+}
+
+.about__container {
+  padding: 10vh 8vw;
+}
+.about__overtitle {
+  color: #595959;
+  font-family: "Myriad Pro";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.about__title {
+  color: #595959;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 2.25rem;
+}
+.about__image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about__pillars__container {
+  display: flex;
+  gap: 3rem;
+  margin: 5rem 0 7rem 0;
+}
+.about__pillars__left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about__pillars__left__item {
+  width: 40%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.about__pillars__left__item p {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 2rem;
+}
+.about__pillars__left__item div {
+  position: absolute;
+  background: #F8F8F8;
+  width: 5rem;
+  height: 5rem;
+  z-index: -1;
+}
+.about__pillars__right {
+  width: 60%;
+}
+.about__pillars__right__title {
+  margin-bottom: 1.25rem;
+  color: #000;
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 160%;
+  /* 64px */
+  text-transform: uppercase;
+}
+.about__pillars__right__text {
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+}
+.about__pillars__right__text span {
+  font-weight: 800;
+}
+.about__diferentials__overtitle {
+  color: #595959;
+  text-align: center;
+  font-family: "Myriad Pro";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.about__diferentials__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about__partnership__overtitle {
+  color: #595959;
+  text-align: center;
+  font-family: "Myriad Pro";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  margin-top: 10rem;
+}
+.about__partnership__title {
+  color: #000;
+  font-family: Inter;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.about__partnership__perkins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.about__partnership__perkins__title {
+  width: 300px;
+}
+.about__partnership__perkins__content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.about__partnership__perkins__content__img {
+  aspect-ratio: 1/1;
+  border-radius: 999px;
+  width: 30%;
+}
+.about__partnership__perkins__content__info {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.about__partnership__perkins__content__info__text {
+  color: #000;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+}
+.about__partnership__perkins__content__info__text span {
+  font-weight: 600;
+}
+.about__partnership__perkins__content__info__reference {
+  color: #000;
+  text-align: right;
+  font-family: Inter;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.about__projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.about__projects__text {
+  color: #000;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .d-none {
