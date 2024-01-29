@@ -30,6 +30,15 @@
   border-radius: 9px;
 }
 
+#homeSidebar.nav .trigger span {
+  background-color: #cdced0;
+}
+
+#homeSidebar.nav .trigger span::before,
+#homeSidebar.nav .trigger span::after {
+  background-color: #FFF;
+}
+
 .nav .trigger span::before,
 .nav .trigger span::after {
   position: absolute;
@@ -272,6 +281,28 @@
   background-color: #1C1C1C;
   color: white;
 }
+.bm-button--lowOpacity {
+  border: solid rgba(255, 255, 255, 0.4) 1px;
+  padding: 1rem 2.5rem;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.3764705882);
+  cursor: pointer;
+  color: white;
+}
+.bm-button--lowOpacity:hover {
+  background-color: #1C1C1C;
+  color: #c1c1c1;
+}
+.bm-soon--transparent {
+  border: solid #1C1C1C 1px;
+  padding: 1rem 2.5rem;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #1C1C1C;
+  color: white;
+}
 .bm-button--green {
   border: solid #1C1C1C 1px;
   padding: 1rem 2.5rem;
@@ -337,7 +368,7 @@
   margin-bottom: 5rem;
 }
 .projects__container .project__status {
-  align-self: flex-start;
+  align-self: center;
   width: 5%;
   height: -moz-max-content;
   height: max-content;
@@ -395,13 +426,27 @@
   aspect-ratio: 4/3;
   width: 40%;
   height: auto;
-  background: url("../assets/imgs/project__image-fradique.png");
   background-position: bottom;
   background-size: 100%;
   transition: 1s all;
 }
 .projects__container .project__image__container:hover {
   background-size: 160%;
+}
+.projects__container .project__image__container.fradique {
+  background-image: url("../assets/imgs/project__image-fradique.webp");
+}
+.projects__container .project__image__container.lapa {
+  background-image: url("../assets/imgs/project__image-lapa.webp");
+}
+.projects__container .project__image__container.unique {
+  background-image: url("../assets/imgs/project__image-unique.webp");
+}
+.projects__container .project__image__container.modena {
+  background-image: url("../assets/imgs/project__image-modena.webp");
+}
+.projects__container .project__image__container.apinajes {
+  background-image: url("../assets/imgs/project__image-apinajes.webp");
 }
 .projects__container .project__image__footer {
   position: absolute;
@@ -518,7 +563,7 @@
 .project__page__grid__img__container {
   aspect-ratio: 3/4;
   width: calc(25% - 0.75rem);
-  background-color: red;
+  background-color: #c1c1c1;
   position: relative;
 }
 .project__page__grid__img__pic {
@@ -526,6 +571,8 @@
   width: 100%;
   height: 100%;
   top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .project__page__view-more__container {
   display: flex;
@@ -733,7 +780,7 @@
   letter-spacing: 4.8px;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 .about__partnership__title {
   color: #000;
@@ -754,6 +801,7 @@
 }
 .about__partnership__perkins__title {
   width: 300px;
+  align-self: center;
 }
 .about__partnership__perkins__content {
   display: flex;
@@ -805,10 +853,51 @@
 .about__projects__text {
   color: #000;
   font-family: "Inter";
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.grid-container img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bioma-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.bioma-subtitle {
+  font-size: 1.2em;
+  color: black;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.bioma-text {
+  font-size: 1em;
+  color: black;
+  line-height: 1.5;
+  font-family: "Inter";
 }
 
 .contact__page__container {
@@ -818,7 +907,7 @@
 .contact__page__overtitle {
   color: #595959;
   font-family: "Myriad Pro";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -828,14 +917,14 @@
 .contact__page__title {
   color: #595959;
   font-family: Inter;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
 }
 .contact__page__map {
-  margin: 5.675vw 0vw;
-  height: 38.375rem;
+  margin: 5.675vh 0vw;
+  height: 50vh;
   flex-shrink: 0;
 }
 .contact__page__info {
@@ -864,6 +953,9 @@
   line-height: normal;
   margin-top: 0.25rem;
 }
+.contact__page__form {
+  margin-top: 4rem;
+}
 .contact__page__form__message {
   width: 30%;
 }
@@ -876,6 +968,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
+.contact__page__form .contact__page__form__select,
 .contact__page__form input[type=text],
 .contact__page__form input[type=email],
 .contact__page__form input[type=tel] {
@@ -888,7 +981,7 @@
   width: 100%;
   flex-shrink: 0;
 }
-.contact__page__form input[type=text]::-moz-placeholder, .contact__page__form input[type=email]::-moz-placeholder, .contact__page__form input[type=tel]::-moz-placeholder {
+.contact__page__form .contact__page__form__select::-moz-placeholder, .contact__page__form input[type=text]::-moz-placeholder, .contact__page__form input[type=email]::-moz-placeholder, .contact__page__form input[type=tel]::-moz-placeholder {
   color: #848484;
   font-family: Inter;
   font-size: 1rem;
@@ -896,6 +989,7 @@
   font-weight: 400;
   line-height: normal;
 }
+.contact__page__form .contact__page__form__select::placeholder,
 .contact__page__form input[type=text]::placeholder,
 .contact__page__form input[type=email]::placeholder,
 .contact__page__form input[type=tel]::placeholder {
@@ -987,12 +1081,42 @@
   transform: scale(1.5);
 }
 
-.slide-content {
+.home__slide__container {
   position: absolute;
-  left: 20px; /* Ajuste conforme necessário */
-  bottom: 20px; /* Ajuste conforme necessário */
+  left: 8vw; /* Ajuste conforme necessário */
+  top: 45vh; /* Ajuste conforme necessário */
   color: #fff;
   z-index: 1000;
+  width: 70%;
+}
+.home__slide__title {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.home__slide__subtitle {
+  color: #FFF;
+  font-family: "Myriad Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 2rem;
+}
+.home__slide__text {
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-top: 1.25rem;
+  margin-bottom: 3rem;
+  display: none;
 }
 
 .slide-title {
@@ -1021,7 +1145,7 @@
 .contact__page__overtitle {
   color: #595959;
   font-family: "Myriad Pro";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -1031,14 +1155,14 @@
 .contact__page__title {
   color: #595959;
   font-family: Inter;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
 }
 .contact__page__map {
-  margin: 5.675vw 0vw;
-  height: 38.375rem;
+  margin: 5.675vh 0vw;
+  height: 50vh;
   flex-shrink: 0;
 }
 .contact__page__info {
@@ -1067,6 +1191,9 @@
   line-height: normal;
   margin-top: 0.25rem;
 }
+.contact__page__form {
+  margin-top: 4rem;
+}
 .contact__page__form__message {
   width: 30%;
 }
@@ -1079,6 +1206,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
+.contact__page__form .contact__page__form__select,
 .contact__page__form input[type=text],
 .contact__page__form input[type=email],
 .contact__page__form input[type=tel] {
@@ -1091,7 +1219,7 @@
   width: 100%;
   flex-shrink: 0;
 }
-.contact__page__form input[type=text]::-moz-placeholder, .contact__page__form input[type=email]::-moz-placeholder, .contact__page__form input[type=tel]::-moz-placeholder {
+.contact__page__form .contact__page__form__select::-moz-placeholder, .contact__page__form input[type=text]::-moz-placeholder, .contact__page__form input[type=email]::-moz-placeholder, .contact__page__form input[type=tel]::-moz-placeholder {
   color: #848484;
   font-family: Inter;
   font-size: 1rem;
@@ -1099,6 +1227,7 @@
   font-weight: 400;
   line-height: normal;
 }
+.contact__page__form .contact__page__form__select::placeholder,
 .contact__page__form input[type=text]::placeholder,
 .contact__page__form input[type=email]::placeholder,
 .contact__page__form input[type=tel]::placeholder {

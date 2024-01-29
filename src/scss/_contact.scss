@@ -6,7 +6,7 @@
   &__overtitle {
     color: #595959;
     font-family: "Myriad Pro";
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -16,14 +16,14 @@
   &__title {
     color: #595959;
     font-family: Inter;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
   }
   &__map {
-    margin: 5.675vw 0vw;
-    height: 38.375rem;
+    margin: 5.675vh 0vw;
+    height: 50vh;
     flex-shrink: 0;
   }
   &__info {
@@ -60,6 +60,7 @@
     }
   }
   &__form {
+    margin-top: 4rem;
     &__message{
       width: 30%;
     }
@@ -72,6 +73,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
     }
+    .contact__page__form__select,
     input[type="text"],
     input[type="email"],
     input[type="tel"] {

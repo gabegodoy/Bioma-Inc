@@ -140,7 +140,7 @@
             letter-spacing: 4.8px;
             text-transform: uppercase;
             margin-bottom: 1rem;
-            margin-top: 10rem;
+            margin-top: 6rem;
         }
 
         &__title {
@@ -163,6 +163,7 @@
 
             &__title {
                 width: 300px;
+                align-self: center;
             }
         }
 
@@ -224,10 +225,36 @@
         &__text {
             color: #000;
             font-family: 'Inter';
-            font-size: 1rem;
+            font-size: 1.5rem;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
     }
+
+
+    
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 1rem;
+
+    margin-top: 2rem;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.bioma-title { font-size: 2.5em; font-weight: bold; color: black; margin-bottom: 2rem; }
+
+.bioma-subtitle { font-size: 1.2em; color: black; margin-top: 0em; margin-bottom: 1em; font-family: 'Inter'; font-weight: 600;}
+
+.bioma-text { font-size: 1em; color: black; line-height: 1.5; font-family: 'Inter';}

@@ -28,6 +28,17 @@
     border-radius: 9px;
 }
 
+    #homeSidebar.nav .trigger span {
+        background-color: #cdced0;
+    }
+
+    #homeSidebar.nav .trigger span::before,
+    #homeSidebar.nav .trigger span::after {
+        background-color: #FFF;
+
+    }
+
+
 .nav .trigger span::before,
 .nav .trigger span::after {
     position: absolute;

@@ -8,7 +8,7 @@
         margin-bottom: 5rem;
         }
         &__status{
-            align-self: flex-start;
+            align-self: center;
             width: 5%;
             height: max-content;
             p{
@@ -71,7 +71,6 @@
                 width: 40%;
                 height: auto;
                 
-                background: url('../assets/imgs/project__image-fradique.png');
                 background-position: bottom;
                 background-size: 100%;
                 
@@ -81,6 +80,27 @@
                     background-size: 160%;       
                 }
             }
+            &__container.fradique{
+                background-image: url('../assets/imgs/project__image-fradique.webp');
+
+            }
+            &__container.lapa{
+                background-image: url('../assets/imgs/project__image-lapa.webp');
+
+            }
+            &__container.unique{
+                background-image: url('../assets/imgs/project__image-unique.webp');
+
+            }
+            &__container.modena{
+                background-image: url('../assets/imgs/project__image-modena.webp');
+
+            }
+            &__container.apinajes{
+                background-image: url('../assets/imgs/project__image-apinajes.webp');
+
+            }
+
 
             &__footer{
                 position: absolute;

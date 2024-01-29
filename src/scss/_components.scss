@@ -10,6 +10,29 @@
             color: white;
         }
     }
+    &-button--lowOpacity{
+
+        border: solid #ffffff66 1px;       
+        padding: 1rem 2.5rem;
+        transition: .5s ease-in-out;
+        background-color: #ffffff60;
+        cursor: pointer;
+        color: white;
+        
+        &:hover{
+            background-color: #1C1C1C;
+            color: #c1c1c1;
+        }
+    }
+    &-soon--transparent{
+        border: solid #1C1C1C 1px;       
+        padding: 1rem 2.5rem;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        width: fit-content;
+        background-color: #1C1C1C;
+        color: white;
+    }
     &-button--green{
         border: solid #1C1C1C 1px;       
         padding: 1rem 2.5rem;

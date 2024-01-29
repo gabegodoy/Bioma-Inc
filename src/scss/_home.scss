@@ -22,12 +22,53 @@
   transform: scale(1.5);
 }
 
-.slide-content {
-  position: absolute;
-  left: 20px; /* Ajuste conforme necessário */
-  bottom: 20px; /* Ajuste conforme necessário */
-  color: #fff;
-  z-index: 1000;
+// .slide-content {
+//   position: absolute;
+//   left: 20px; /* Ajuste conforme necessário */
+//   bottom: 20px; /* Ajuste conforme necessário */
+//   color: #fff;
+//   z-index: 1000;
+// }
+
+.home__slide{
+  &__container{
+    position: absolute;
+    left: 8vw; /* Ajuste conforme necessário */
+    top: 45vh; /* Ajuste conforme necessário */
+    color: #fff;
+    z-index: 1000;
+    width: 70%;
+
+  }
+  &__title{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__subtitle{
+    color: #FFF;
+    font-family: "Myriad Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    margin-bottom: 2rem;
+  }
+  &__text{
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    margin-top: 1.25rem;
+    margin-bottom: 3rem;
+    display: none;
+  }
 }
 
 .slide-title {

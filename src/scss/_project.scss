@@ -72,7 +72,7 @@
             &__container{
                 aspect-ratio: 3/4;
                 width: calc(25% - .75rem);
-                background-color: red;
+                background-color: #c1c1c1;
                 position: relative;
             }
             &__blur{
@@ -83,6 +83,7 @@
                 width: 100%;
                 height: 100%;
                 top: 0;
+                object-fit: cover;
             }
         }
 
