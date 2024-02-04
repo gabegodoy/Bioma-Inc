@@ -4,13 +4,13 @@ var mySwiper = new Swiper('.swiper-container', {
     autoplay: {
       delay: 6000, // Delay between slides in milliseconds (8 seconds)
     },
-    speed: 900, // Transition speed in milliseconds (1.5 seconds)
+    speed: 600, // Transition speed in milliseconds (1.5 seconds)
     on: {
       slideChangeTransitionStart: function () {
         var activeSlide = this.slides[this.activeIndex];
         setTimeout(() => {
             activeSlide.style.transform = 'scale(1.05)';
-        }, 500);
+        }, 100);
       },
       slideChangeTransitionEnd: function () {
         var previousSlide = this.slides[this.previousIndex];
