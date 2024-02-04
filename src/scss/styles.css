@@ -362,25 +362,6 @@
   align-items: center;
   margin-bottom: 5rem;
 }
-.projects__container .project__status {
-  align-self: center;
-  width: 5%;
-  height: -moz-max-content;
-  height: max-content;
-}
-.projects__container .project__status p {
-  rotate: -90deg;
-  color: #595959;
-  opacity: 0.6;
-  text-align: center;
-  font-family: "Myriad Pro";
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 4.8px;
-  text-transform: uppercase;
-}
 .projects__container .project__info__container {
   text-align: right;
   width: 55%;
@@ -404,7 +385,33 @@
   font-weight: 800;
   line-height: normal;
   text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+.projects__container .project__info__status {
+  color: #595959;
+  opacity: 0.8;
+  border: solid #595959 1px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 6px;
+  font-family: "Myriad Pro";
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   margin-bottom: 1.85rem;
+}
+.projects__container .project__info__status.status--ready {
+  color: white;
+  border-color: white;
+  background-color: #8bc441;
+}
+.projects__container .project__info__status.status--progress {
+  color: white;
+  border-color: white;
+  background-color: #406caa;
 }
 .projects__container .project__info__description {
   color: #222;
@@ -464,7 +471,7 @@
 }
 .projects__container .projects__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   margin-top: 8rem;
 }
@@ -650,7 +657,6 @@
   font-style: normal;
   font-weight: 300;
   line-height: 160%; /* 38.4px */
-  text-transform: capitalize;
   text-align: justify;
 }
 
@@ -1319,6 +1325,9 @@ h3 {
   width: 55%;
   margin: 3rem 0;
 }
+.concept__info__container__image__cont {
+  width: 40%;
+}
 .concept__info__overtitle {
   color: #222;
   font-family: "Myriad Pro";
@@ -1342,7 +1351,7 @@ h3 {
 .concept__info__subtitle {
   color: #222;
   font-family: Inter;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

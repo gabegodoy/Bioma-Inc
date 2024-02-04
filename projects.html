@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="src/assets/icons/favicon.png">
     <title>Bioma Inc - Empreendimentos</title>
 
     <link rel="stylesheet" href="dist/css/reset.css">
@@ -82,19 +82,60 @@
     </div>
 
     <section class="projects__container">
+
+        <!-- FRADIQUE -->
         <div class="project__container">
-            <div class="project__status">
-                <p>obras aceleradas</p>
-            </div>
             <div class="project__info__container">
                 <span class="project__info__overtitle">Alto de Pinheiros | SP</span>
                 <h3 class="project__info__title">casa vertical fradique</h3>
+                <div style="width: 100%; display: inline-flex; justify-content: flex-end;">
+                    <p class="project__info__status status--progress">obras aceleradas</p>
+                </div>
                 <p class="project__info__description">Seu novo lar com projeto assinado pela Perkins&Will e premiado no
                     Design Commendation Award e Menção Honrosa na Revista Monolito.</p>
                 <a href="projects/fradique.html" class="bm-button--transparent">Conheça o Empreendimento</a>
             </div>
             <div class="project__image__container fradique">
                 <div class="project__image__footer">
+                    <div class="project__image__footer__info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 94 110" fill="none">
+                            <g opacity="0.8" clip-path="url(#clip0_36_487)">
+                                <path
+                                    d="M87.125 61.875H94V103.125H-16V6.875H80.25V34.375H87.125V61.875ZM-9.125 96.25H18.375V34.375H73.375V13.75H-9.125V96.25ZM25.25 96.25H52.75V61.875H80.25V41.25H25.25V96.25ZM87.125 96.25V68.75H59.625V96.25H87.125Z"
+                                    fill="white" />
+                            </g>
+                        </svg>
+                        <p>60m² a 165m²</p>
+                    </div>
+                    <div class="project__image__footer__info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 82 110" fill="none">
+                            <g opacity=".8" clip-path="url(#clip0_36_493)">
+                                <path
+                                    d="M66.5312 91.0937V18.9062H47.625V2.79395L-9.09375 12.573V91.0937H-24.5625V97.9687H-5.89258L47.625 105.35V25.7812H59.6562V97.9687H78.5625V91.0937H66.5312ZM40.75 97.4621L-2.21875 91.5354V18.3643L40.75 10.9569V97.4621Z"
+                                    fill="white" />
+                                <path d="M27 49.8438H33.875V63.5938H27V49.8438Z" fill="white" />
+                            </g>
+                            </defs>
+                        </svg>
+                        <p>1 e 2 Dorms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- APINAJES -->
+        <div id="CasaVerticalApinajes" class="project__container" style="flex-direction: row-reverse;">
+            <div class="project__info__container"
+                style="text-align: left !important; margin-left: 3rem; margin-right: 0;">
+                <span class="project__info__overtitle">Perdizes - São Paulo | SP</span>
+                <h3 class="project__info__title">casa vertical Apinajés</h3>
+                <p class="project__info__status">breve lançamento</p>
+                <p class="project__info__description">Nossa evolução do primeiro projeto assinado e premiado da
+                    Perkins&Will São Paulo. Com mobiliário especial de Carlos Motta, fitness com Bikes by VELOCITY, área
+                    de CoWorking, mercadinho e composteira coletiva. </p>
+                <a class="bm-button--transparent">Em Breve</a>
+            </div>
+            <div class="project__image__container apinajes">
+                <div class="project__image__footer" style="display: none;">
                     <div class="project__image__footer__info">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 94 110" fill="none">
                             <g opacity="0.8" clip-path="url(#clip0_36_487)">
@@ -120,14 +161,53 @@
                 </div>
             </div>
         </div>
-        <div class="project__container" style="flex-direction: row-reverse;">
-            <div class="project__status">
-                <p>pronto para morar</p>
+        <!-- LAPA -->
+        <div class="project__container" id="CasaVerticalLapa">
+            <div class="project__info__container">
+                <span class="project__info__overtitle">Alto da Lapa - São Paulo | SP</span>
+                <h3 class="project__info__title">Casa vertical city lapa</h3>
+                <div style="width: 100%; display: inline-flex; justify-content: flex-end;">
+                    <p class="project__info__status">breve lançamento</p>
+                </div>
+                <p class="project__info__description">Um residencial boutique com menos unidades, onde as relações
+                    humanas são fundamentais e cada pessoa é conhecida e chamada pelo nome. Orgulho para seus moradores,
+                    capaz de transformar positivamente a vida das pessoas e seu entorno.</p>
+                <a class="bm-button--transparent" style="justify-self: right;">Em Breve</a>
             </div>
+            <div class="project__image__container lapa">
+                <div class="project__image__footer" style="display: none;">
+                    <div class="project__image__footer__info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 94 110" fill="none">
+                            <g opacity="0.8" clip-path="url(#clip0_36_487)">
+                                <path
+                                    d="M87.125 61.875H94V103.125H-16V6.875H80.25V34.375H87.125V61.875ZM-9.125 96.25H18.375V34.375H73.375V13.75H-9.125V96.25ZM25.25 96.25H52.75V61.875H80.25V41.25H25.25V96.25ZM87.125 96.25V68.75H59.625V96.25H87.125Z"
+                                    fill="white" />
+                            </g>
+                        </svg>
+                        <p>30m² a 112m²</p>
+                    </div>
+                    <div class="project__image__footer__info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 82 110" fill="none">
+                            <g opacity=".8" clip-path="url(#clip0_36_493)">
+                                <path
+                                    d="M66.5312 91.0937V18.9062H47.625V2.79395L-9.09375 12.573V91.0937H-24.5625V97.9687H-5.89258L47.625 105.35V25.7812H59.6562V97.9687H78.5625V91.0937H66.5312ZM40.75 97.4621L-2.21875 91.5354V18.3643L40.75 10.9569V97.4621Z"
+                                    fill="white" />
+                                <path d="M27 49.8438H33.875V63.5938H27V49.8438Z" fill="white" />
+                            </g>
+                            </defs>
+                        </svg>
+                        <p>1 e 2 Dorms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- UNIQUE -->
+        <div class="project__container" style="flex-direction: row-reverse;">
             <div class="project__info__container"
                 style="text-align: left !important; margin-left: 3rem; margin-right: 0;">
                 <span class="project__info__overtitle">Bela Vista - Erechim | RS</span>
                 <h3 class="project__info__title">Unique</h3>
+                <p class="project__info__status status--ready">pronto para morar</p>
                 <p class="project__info__description">Um projeto moderno e com espaços versáteis para viver a
                     praticidade e tranquilidade que só um dos melhores bairros da cidade pode oferecer. UNIQUE, especial
                     como o bairro da Bela Vista, único como você.</p>
@@ -143,7 +223,7 @@
                                     fill="white" />
                             </g>
                         </svg>
-                        <p>30m² a 112m²</p>
+                        <p>55m² a 2352m²</p>
                     </div>
                     <div class="project__image__footer__info">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 82 110" fill="none">
@@ -155,18 +235,19 @@
                             </g>
                             </defs>
                         </svg>
-                        <p>1 e 2 Dorms</p>
+                        <p>1 a 3 Dorms</p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- MODENA -->
         <div class="project__container">
-            <div class="project__status">
-                <p>pronto para morar</p>
-            </div>
             <div class="project__info__container">
                 <span class="project__info__overtitle">Jd. Nova Boituva - Boituva | SP</span>
                 <h3 class="project__info__title">Módena Boituva</h3>
+                <div style="width: 100%; display: inline-flex; justify-content: flex-end;">
+                    <p class="project__info__status status--ready">pronto para morar</p>
+                </div>
                 <p class="project__info__description">Bem-vindo a um novo conceito de morar em Boituva, para uma vida
                     mais prática na cidade de hoje e de amanhã. Imóveis compactos com espaço de sobra para sua
                     liberdade.</p>
@@ -199,85 +280,7 @@
                 </div>
             </div>
         </div>
-        <div id="CasaVerticalApinajes" class="project__container" style="flex-direction: row-reverse;">
-            <div class="project__status">
-                <p>breve lançamento</p>
-            </div>
-            <div class="project__info__container"
-                style="text-align: left !important; margin-left: 3rem; margin-right: 0;">
-                <span class="project__info__overtitle">Perdizes - São Paulo | SP</span>
-                <h3 class="project__info__title">casa vertical Apinajés</h3>
-                <p class="project__info__description">Nossa evolução do primeiro projeto assinado e premiado da
-                    Perkins&Will São Paulo. Com mobiliário especial de Carlos Motta, fitness com Bikes by VELOCITY, área
-                    de CoWorking, mercadinho e composteira coletiva. </p>
-                <a class="bm-button--transparent">Em Breve</a>
-            </div>
-            <div class="project__image__container apinajes">
-                <div class="project__image__footer">
-                    <div class="project__image__footer__info">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 94 110" fill="none">
-                            <g opacity="0.8" clip-path="url(#clip0_36_487)">
-                                <path
-                                    d="M87.125 61.875H94V103.125H-16V6.875H80.25V34.375H87.125V61.875ZM-9.125 96.25H18.375V34.375H73.375V13.75H-9.125V96.25ZM25.25 96.25H52.75V61.875H80.25V41.25H25.25V96.25ZM87.125 96.25V68.75H59.625V96.25H87.125Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                        <p>30m² a 112m²</p>
-                    </div>
-                    <div class="project__image__footer__info">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 82 110" fill="none">
-                            <g opacity=".8" clip-path="url(#clip0_36_493)">
-                                <path
-                                    d="M66.5312 91.0937V18.9062H47.625V2.79395L-9.09375 12.573V91.0937H-24.5625V97.9687H-5.89258L47.625 105.35V25.7812H59.6562V97.9687H78.5625V91.0937H66.5312ZM40.75 97.4621L-2.21875 91.5354V18.3643L40.75 10.9569V97.4621Z"
-                                    fill="white" />
-                                <path d="M27 49.8438H33.875V63.5938H27V49.8438Z" fill="white" />
-                            </g>
-                            </defs>
-                        </svg>
-                        <p>1 e 2 Dorms</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="project__container" id="CasaVerticalLapa">
-            <div class="project__status">
-                <p>breve lançamento</p>
-            </div>
-            <div class="project__info__container">
-                <span class="project__info__overtitle">Alto da Lapa - São Paulo | SP</span>
-                <h3 class="project__info__title">Casa vertical city lapa</h3>
-                <p class="project__info__description">Um residencial boutique com menos unidades, onde as relações
-                    humanas são fundamentais e cada pessoa é conhecida e chamada pelo nome. Orgulho para seus moradores,
-                    capaz de transformar positivamente a vida das pessoas e seu entorno.</p>
-                <a class="bm-button--transparent" style="justify-self: right;">Em Breve</a>
-            </div>
-            <div class="project__image__container lapa">
-                <div class="project__image__footer">
-                    <div class="project__image__footer__info">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 94 110" fill="none">
-                            <g opacity="0.8" clip-path="url(#clip0_36_487)">
-                                <path
-                                    d="M87.125 61.875H94V103.125H-16V6.875H80.25V34.375H87.125V61.875ZM-9.125 96.25H18.375V34.375H73.375V13.75H-9.125V96.25ZM25.25 96.25H52.75V61.875H80.25V41.25H25.25V96.25ZM87.125 96.25V68.75H59.625V96.25H87.125Z"
-                                    fill="white" />
-                            </g>
-                        </svg>
-                        <p>30m² a 112m²</p>
-                    </div>
-                    <div class="project__image__footer__info">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 82 110" fill="none">
-                            <g opacity=".8" clip-path="url(#clip0_36_493)">
-                                <path
-                                    d="M66.5312 91.0937V18.9062H47.625V2.79395L-9.09375 12.573V91.0937H-24.5625V97.9687H-5.89258L47.625 105.35V25.7812H59.6562V97.9687H78.5625V91.0937H66.5312ZM40.75 97.4621L-2.21875 91.5354V18.3643L40.75 10.9569V97.4621Z"
-                                    fill="white" />
-                                <path d="M27 49.8438H33.875V63.5938H27V49.8438Z" fill="white" />
-                            </g>
-                            </defs>
-                        </svg>
-                        <p>1 e 2 Dorms</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="projects__footer">
             <div class="projects__footer__item">
                 <h5 class="projects__footer__item__title">onde estamos</h5>

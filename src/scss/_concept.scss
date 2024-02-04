@@ -25,6 +25,9 @@ h3 {
       text-align: left;
       width: 55%;
       margin: 3rem 0;
+      &__image__cont{
+        width: 40%;
+      }
     }
     &__overtitle {
       color: #222;
@@ -49,7 +52,7 @@ h3 {
     &__subtitle {
       color: #222;
       font-family: Inter;
-      font-size: 2rem;
+      font-size: 1.75rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
