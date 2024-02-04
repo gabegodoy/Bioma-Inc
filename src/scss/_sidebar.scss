@@ -23,20 +23,10 @@
     height: 6px;
     transform: translateY(12px);
     background-color: #808082;
-    background-color: #525252;
+    background-color: hsl(86, 64%, 62%);
     display: block;
     border-radius: 9px;
 }
-
-    #homeSidebar.nav .trigger span {
-        background-color: #cdced0;
-    }
-
-    #homeSidebar.nav .trigger span::before,
-    #homeSidebar.nav .trigger span::after {
-        background-color: #FFF;
-
-    }
 
 
 .nav .trigger span::before,
@@ -46,7 +36,7 @@
     width: 100%;
     height: 6px;
     background-color: #525252;
-    background-color: #808082;
+    background-color: #8bc441;
     display: block;
     border-radius: 9px;
 }
