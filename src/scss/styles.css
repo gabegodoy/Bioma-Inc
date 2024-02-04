@@ -252,7 +252,11 @@
 .sidebar-social-container {
   display: flex;
   justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
   gap: 1rem;
+  padding-left: 48px;
   position: relative;
   bottom: 0;
 }
