@@ -11,13 +11,13 @@ h3 {
 
 .concept__page__container{
   padding: 10vh 8vw;
-  padding-top: 15vh;
 }
 
 .concept {
   &__container {
     display: flex;
     gap: 3rem;
+    align-items: center;
     justify-content: space-between;
   }
   &__info {
@@ -28,6 +28,10 @@ h3 {
       &__image__cont{
         width: 40%;
       }
+    }
+    &__title__image{
+      width: 90%;
+      padding-bottom: 1rem;
     }
     &__overtitle {
       color: #222;

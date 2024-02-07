@@ -1312,12 +1312,12 @@ h3 {
 
 .concept__page__container {
   padding: 10vh 8vw;
-  padding-top: 15vh;
 }
 
 .concept__container {
   display: flex;
   gap: 3rem;
+  align-items: center;
   justify-content: space-between;
 }
 .concept__info__container {
@@ -1327,6 +1327,10 @@ h3 {
 }
 .concept__info__container__image__cont {
   width: 40%;
+}
+.concept__info__title__image {
+  width: 90%;
+  padding-bottom: 1rem;
 }
 .concept__info__overtitle {
   color: #222;
