@@ -2,186 +2,273 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.png">
-    <title>Bioma Inc - Módena</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../src/assets/icons/favicon.png">
+  <title>Bioma Inc - Módena</title>
 
-    <link rel="stylesheet" href="../dist/css/reset.css">
-    <link rel="stylesheet" href="../../src/scss/styles.css">
+  <link rel="stylesheet" href="../dist/css/reset.css">
+  <link rel="stylesheet" href="../../src/scss/styles.css">
 
 </head>
 
 <body>
-    <div class="borders-outside"></div>
-    <div class="borders-inside"></div>
-    <div class="nav">
-        <div class="trigger"><span></span></div>
-    </div>
-    <div class="header__project" style="gap: 27%;">
-        <img src="../src/assets/imgs/bioma__header-img.png" alt="Logomarca Bioma" class="header__img__bioma">
-        <img src="../src/assets/imgs/LOGO-MODENA.png" alt="Logomarca Módena Boituva" class="header__img__project">
-    </div>
-    
-    <div class="sidebar">
-        <div class="content">
-            <ul class="menu">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">A Bioma</a></li>
-                <!-- <li><a href="#">Conceito</a></li> -->
-                <li><a href="../projects.html">Empreendimentos</a></li>
-                <li><a href="../contact.html">Contato</a></li>
-            </ul>
-            <div class="sidebar-social-container">
-                <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                    <path
-                        d="M8.22201 16.0003C8.22009 17.8889 8.88639 19.7173 10.103 21.1619C11.3196 22.6064 13.008 23.574 14.8694 23.8933C16.7308 24.2126 18.6452 23.8631 20.2737 22.9066C21.9022 21.9501 23.1397 20.4483 23.7673 18.667H16.222V13.3337H29.2953V18.667H29.2887C28.0527 24.7523 22.6727 29.3337 16.222 29.3337C8.85801 29.3337 2.88867 23.3643 2.88867 16.0003C2.88867 8.63633 8.85801 2.667 16.222 2.667C18.4014 2.66544 20.5478 3.19866 22.4731 4.21988C24.3984 5.2411 26.0437 6.71913 27.2647 8.52433L22.894 11.5843C21.9452 10.1502 20.5596 9.05997 18.9425 8.47521C17.3254 7.89046 15.5629 7.84231 13.9163 8.33791C12.2697 8.8335 10.8266 9.84647 9.80095 11.2266C8.77527 12.6068 8.2216 14.2808 8.22201 16.0003Z"
-                        fill="black" />
-                </svg>
-                <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                    <path
-                        d="M17.5934 2.6665C19.0934 2.6705 19.8548 2.6785 20.5121 2.69717L20.7708 2.7065C21.0694 2.71717 21.3641 2.7305 21.7201 2.7465C23.1388 2.81317 24.1068 3.03717 24.9561 3.3665C25.8361 3.70517 26.5774 4.16384 27.3188 4.90384C27.9968 5.57037 28.5214 6.37662 28.8561 7.2665C29.1854 8.11584 29.4094 9.08384 29.4761 10.5038C29.4921 10.8585 29.5054 11.1532 29.5161 11.4532L29.5241 11.7118C29.5441 12.3678 29.5521 13.1292 29.5548 14.6292L29.5561 15.6238V17.3705C29.5594 18.343 29.5492 19.3156 29.5254 20.2878L29.5174 20.5465C29.5068 20.8465 29.4934 21.1412 29.4774 21.4958C29.4108 22.9158 29.1841 23.8825 28.8561 24.7332C28.5223 25.6235 27.9976 26.43 27.3188 27.0958C26.6521 27.7736 25.8459 28.2982 24.9561 28.6332C24.1068 28.9625 23.1388 29.1865 21.7201 29.2532C21.4037 29.2681 21.0873 29.2814 20.7708 29.2932L20.5121 29.3012C19.8548 29.3198 19.0934 29.3292 17.5934 29.3318L16.5988 29.3332H14.8534C13.8805 29.3365 12.9075 29.3263 11.9348 29.3025L11.6761 29.2945C11.3596 29.2825 11.0431 29.2687 10.7268 29.2532C9.30811 29.1865 8.34011 28.9625 7.48944 28.6332C6.59967 28.299 5.79373 27.7743 5.12811 27.0958C4.4495 26.4296 3.92441 25.6233 3.58944 24.7332C3.26011 23.8838 3.03611 22.9158 2.96944 21.4958C2.95459 21.1795 2.94125 20.863 2.92944 20.5465L2.92277 20.2878C2.8982 19.3156 2.88709 18.3431 2.88944 17.3705V14.6292C2.88572 13.6566 2.8955 12.6841 2.91877 11.7118L2.92811 11.4532C2.93877 11.1532 2.95211 10.8585 2.96811 10.5038C3.03477 9.08384 3.25877 8.11717 3.58811 7.2665C3.92293 6.37571 4.44907 5.5692 5.12944 4.90384C5.7949 4.2258 6.6003 3.70115 7.48944 3.3665C8.34011 3.03717 9.30677 2.81317 10.7268 2.7465C11.0814 2.7305 11.3774 2.71717 11.6761 2.7065L11.9348 2.6985C12.907 2.67481 13.8796 2.66459 14.8521 2.66784L17.5934 2.6665ZM16.2228 9.33317C14.4547 9.33317 12.759 10.0355 11.5087 11.2858C10.2585 12.536 9.55611 14.2317 9.55611 15.9998C9.55611 17.7679 10.2585 19.4636 11.5087 20.7139C12.759 21.9641 14.4547 22.6665 16.2228 22.6665C17.9909 22.6665 19.6866 21.9641 20.9368 20.7139C22.1871 19.4636 22.8894 17.7679 22.8894 15.9998C22.8894 14.2317 22.1871 12.536 20.9368 11.2858C19.6866 10.0355 17.9909 9.33317 16.2228 9.33317ZM16.2228 11.9998C16.7481 11.9998 17.2682 12.1031 17.7536 12.3041C18.2389 12.505 18.6799 12.7996 19.0514 13.1709C19.4229 13.5423 19.7176 13.9832 19.9187 14.4685C20.1198 14.9538 20.2234 15.4739 20.2234 15.9992C20.2235 16.5245 20.1202 17.0446 19.9192 17.53C19.7183 18.0153 19.4237 18.4563 19.0523 18.8278C18.681 19.1993 18.2401 19.494 17.7548 19.6951C17.2695 19.8962 16.7494 19.9998 16.2241 19.9998C15.1632 19.9998 14.1458 19.5784 13.3957 18.8283C12.6455 18.0781 12.2241 17.0607 12.2241 15.9998C12.2241 14.939 12.6455 13.9216 13.3957 13.1714C14.1458 12.4213 15.1632 11.9998 16.2241 11.9998M23.2241 7.33317C22.7821 7.33317 22.3582 7.50877 22.0456 7.82133C21.733 8.13389 21.5574 8.55781 21.5574 8.99984C21.5574 9.44186 21.733 9.86579 22.0456 10.1783C22.3582 10.4909 22.7821 10.6665 23.2241 10.6665C23.6661 10.6665 24.0901 10.4909 24.4026 10.1783C24.7152 9.86579 24.8908 9.44186 24.8908 8.99984C24.8908 8.55781 24.7152 8.13389 24.4026 7.82133C24.0901 7.50877 23.6661 7.33317 23.2241 7.33317Z"
-                        fill="black" />
-                </svg>
-                <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="32"
-                    viewBox="0 0 16 32" fill="none">
-                    <g clip-path="url(#clip0_35_302)">
-                        <path
-                            d="M4.19302 32V16.9847H0.222656V11.5784H4.19302V6.9608C4.19302 3.33222 6.53834 0 11.9424 0C14.1305 0 15.7484 0.20976 15.7484 0.20976L15.6209 5.25827C15.6209 5.25827 13.9709 5.24221 12.1703 5.24221C10.2215 5.24221 9.90925 6.14029 9.90925 7.63088V11.5784H15.7758L15.5206 16.9847H9.90925V32H4.19302Z"
-                            fill="black" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_35_302">
-                            <rect width="15.5532" height="32" fill="white" transform="translate(0.222656)" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </div>
-        </div>
-    </div>
+  <div class="borders-outside"></div>
+  <div class="borders-inside"></div>
+  <div class="nav">
+    <div class="trigger"><span></span></div>
+  </div>
+  <div class="header__project">
+    <a href="../index.html">
+      <img loading="lazy" src="../src/assets/imgs/bioma__header-img.png" alt="Logomarca Bioma" class="header__img__bioma">
+    </a>
+    <img loading="lazy" src="../src/assets/imgs/LOGO-MODENA.png" alt="Logomarca Módena Boituva" class="header__img__project">
+    <div style="width: 7rem;"></div>
+  </div>
+  <div style="position: fixed; bottom: 1.2rem; right: 1.2rem; z-index: 999;">
+    <a
+      href="https://api.whatsapp.com/send?phone=5511912921212&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Bioma%20e%20seus%20empreendimentos.">
+      <img loading="lazy" style="width: 5rem; height: 5rem;" src="../src/assets/imgs/wpp-logo.png" alt="Logo Whatsapp">
+    </a>
+  </div>
+  <div class="sidebar">
+    <div class="content">
+      <ul class="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">A Bioma</a></li>
+        <li><a href="../concept.html">Conceito</a></li>
+        <li><a href="../projects.html">Empreendimentos</a></li>
+        <li><a href="../contact.html">Contato</a></li>
+      </ul>
+      <div class="sidebar-social-container">
+        <a href="https://www.linkedin.com/company/biomainc/">
+          <svg width="20" height="20" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M29.7358 0H2.30006C1.04291 0 0.0214844 1.03571 0.0214844 2.30714V29.6929C0.0214844 30.9643 1.04291 32 2.30006 32H29.7358C30.9929 32 32.0215 30.9643 32.0215 29.6929V2.30714C32.0215 1.03571 30.9929 0 29.7358 0ZM9.69291 27.4286H4.95006V12.1571H9.70006V27.4286H9.69291ZM7.32148 10.0714C5.80006 10.0714 4.57148 8.83571 4.57148 7.32143C4.57148 5.80714 5.80006 4.57143 7.32148 4.57143C8.83577 4.57143 10.0715 5.80714 10.0715 7.32143C10.0715 8.84286 8.84291 10.0714 7.32148 10.0714ZM27.4715 27.4286H22.7286V20C22.7286 18.2286 22.6929 15.95 20.2643 15.95C17.7929 15.95 17.4143 17.8786 17.4143 19.8714V27.4286H12.6715V12.1571H17.2215V14.2429H17.2858C17.9215 13.0429 19.4715 11.7786 21.7786 11.7786C26.5786 11.7786 27.4715 14.9429 27.4715 19.0571V27.4286Z"
+              fill="black" />
+          </svg>
+        </a>
 
-    <section class="project__page__container">
-        <h2 class="project__page__overtitle">Jd. Nova Boituva - Boituva | SP</h2>
-        <h1 class="project__page__title">Módena Boituva</h1>
-        <!-- <h1 class="project__page__title">
-            <img src="../src/assets/imgs/casa_vertical--fradique.png" alt="Logomarca Casa Vertical Fradique">
+        <a href="https://www.youtube.com/channel/UCLxPZ4PJuPJxLNR8h2352Ug">
+          <svg width="28" height="20" viewBox="0 0 46 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M44.5817 5.00692C44.0582 3.03608 42.5161 1.48392 40.558 0.957167C37.0088 0 22.7771 0 22.7771 0C22.7771 0 8.5454 0 4.99615 0.957167C3.03807 1.484 1.4959 3.03608 0.972484 5.00692C0.0214844 8.57917 0.0214844 16.0323 0.0214844 16.0323C0.0214844 16.0323 0.0214844 23.4855 0.972484 27.0578C1.4959 29.0286 3.03807 30.5161 4.99615 31.0428C8.5454 32 22.7771 32 22.7771 32C22.7771 32 37.0087 32 40.558 31.0428C42.5161 30.5161 44.0582 29.0286 44.5817 27.0578C45.5327 23.4855 45.5327 16.0323 45.5327 16.0323C45.5327 16.0323 45.5327 8.57917 44.5817 5.00692ZM18.1225 22.7993V9.26542L30.0174 16.0325L18.1225 22.7993Z"
+              fill="black" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/biomaincorporadora/">
+          <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32"
+            fill="none">
+            <path
+              d="M17.5934 2.6665C19.0934 2.6705 19.8548 2.6785 20.5121 2.69717L20.7708 2.7065C21.0694 2.71717 21.3641 2.7305 21.7201 2.7465C23.1388 2.81317 24.1068 3.03717 24.9561 3.3665C25.8361 3.70517 26.5774 4.16384 27.3188 4.90384C27.9968 5.57037 28.5214 6.37662 28.8561 7.2665C29.1854 8.11584 29.4094 9.08384 29.4761 10.5038C29.4921 10.8585 29.5054 11.1532 29.5161 11.4532L29.5241 11.7118C29.5441 12.3678 29.5521 13.1292 29.5548 14.6292L29.5561 15.6238V17.3705C29.5594 18.343 29.5492 19.3156 29.5254 20.2878L29.5174 20.5465C29.5068 20.8465 29.4934 21.1412 29.4774 21.4958C29.4108 22.9158 29.1841 23.8825 28.8561 24.7332C28.5223 25.6235 27.9976 26.43 27.3188 27.0958C26.6521 27.7736 25.8459 28.2982 24.9561 28.6332C24.1068 28.9625 23.1388 29.1865 21.7201 29.2532C21.4037 29.2681 21.0873 29.2814 20.7708 29.2932L20.5121 29.3012C19.8548 29.3198 19.0934 29.3292 17.5934 29.3318L16.5988 29.3332H14.8534C13.8805 29.3365 12.9075 29.3263 11.9348 29.3025L11.6761 29.2945C11.3596 29.2825 11.0431 29.2687 10.7268 29.2532C9.30811 29.1865 8.34011 28.9625 7.48944 28.6332C6.59967 28.299 5.79373 27.7743 5.12811 27.0958C4.4495 26.4296 3.92441 25.6233 3.58944 24.7332C3.26011 23.8838 3.03611 22.9158 2.96944 21.4958C2.95459 21.1795 2.94125 20.863 2.92944 20.5465L2.92277 20.2878C2.8982 19.3156 2.88709 18.3431 2.88944 17.3705V14.6292C2.88572 13.6566 2.8955 12.6841 2.91877 11.7118L2.92811 11.4532C2.93877 11.1532 2.95211 10.8585 2.96811 10.5038C3.03477 9.08384 3.25877 8.11717 3.58811 7.2665C3.92293 6.37571 4.44907 5.5692 5.12944 4.90384C5.7949 4.2258 6.6003 3.70115 7.48944 3.3665C8.34011 3.03717 9.30677 2.81317 10.7268 2.7465C11.0814 2.7305 11.3774 2.71717 11.6761 2.7065L11.9348 2.6985C12.907 2.67481 13.8796 2.66459 14.8521 2.66784L17.5934 2.6665ZM16.2228 9.33317C14.4547 9.33317 12.759 10.0355 11.5087 11.2858C10.2585 12.536 9.55611 14.2317 9.55611 15.9998C9.55611 17.7679 10.2585 19.4636 11.5087 20.7139C12.759 21.9641 14.4547 22.6665 16.2228 22.6665C17.9909 22.6665 19.6866 21.9641 20.9368 20.7139C22.1871 19.4636 22.8894 17.7679 22.8894 15.9998C22.8894 14.2317 22.1871 12.536 20.9368 11.2858C19.6866 10.0355 17.9909 9.33317 16.2228 9.33317ZM16.2228 11.9998C16.7481 11.9998 17.2682 12.1031 17.7536 12.3041C18.2389 12.505 18.6799 12.7996 19.0514 13.1709C19.4229 13.5423 19.7176 13.9832 19.9187 14.4685C20.1198 14.9538 20.2234 15.4739 20.2234 15.9992C20.2235 16.5245 20.1202 17.0446 19.9192 17.53C19.7183 18.0153 19.4237 18.4563 19.0523 18.8278C18.681 19.1993 18.2401 19.494 17.7548 19.6951C17.2695 19.8962 16.7494 19.9998 16.2241 19.9998C15.1632 19.9998 14.1458 19.5784 13.3957 18.8283C12.6455 18.0781 12.2241 17.0607 12.2241 15.9998C12.2241 14.939 12.6455 13.9216 13.3957 13.1714C14.1458 12.4213 15.1632 11.9998 16.2241 11.9998M23.2241 7.33317C22.7821 7.33317 22.3582 7.50877 22.0456 7.82133C21.733 8.13389 21.5574 8.55781 21.5574 8.99984C21.5574 9.44186 21.733 9.86579 22.0456 10.1783C22.3582 10.4909 22.7821 10.6665 23.2241 10.6665C23.6661 10.6665 24.0901 10.4909 24.4026 10.1783C24.7152 9.86579 24.8908 9.44186 24.8908 8.99984C24.8908 8.55781 24.7152 8.13389 24.4026 7.82133C24.0901 7.50877 23.6661 7.33317 23.2241 7.33317Z"
+              fill="black" />
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/biomaincorporadora">
+          <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"
+            fill="none">
+            <g clip-path="url(#clip0_35_302)">
+              <path
+                d="M4.19302 32V16.9847H0.222656V11.5784H4.19302V6.9608C4.19302 3.33222 6.53834 0 11.9424 0C14.1305 0 15.7484 0.20976 15.7484 0.20976L15.6209 5.25827C15.6209 5.25827 13.9709 5.24221 12.1703 5.24221C10.2215 5.24221 9.90925 6.14029 9.90925 7.63088V11.5784H15.7758L15.5206 16.9847H9.90925V32H4.19302Z"
+                fill="black" />
+            </g>
+            <defs>
+              <clipPath id="clip0_35_302">
+                <rect width="15.5532" height="32" fill="white" transform="translate(0.222656)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="project__page__container">
+    <h2 class="project__page__overtitle">Jd. Nova Boituva - Boituva | SP</h2>
+    <h1 class="project__page__title">Módena Boituva</h1>
+    <!-- <h1 class="project__page__title">
+            <img loading="lazy" src="../src/assets/imgs/casa_vertical--fradique.png" alt="Logomarca Casa Vertical Fradique">
         </h1> -->
-        <p class="project__page__subtitle">Bem-vindo a um novo conceito de morar em Boituva, para uma vida mais prática na cidade de hoje e de amanhã. Imóveis compactos com espaço de sobra para sua liberdade.</p>
-    
-        <div class="project__page__grid__container">
-            <div class="project__page__grid__img__container">
-                <div class="project__page__grid__img__blur">FOTO 1</div>
-                <img src="../src/assets/imgs/modena/modena-1.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
-            </div>
-            <div class="project__page__grid__img__container">
-                <div class="project__page__grid__img__blur">FOTO 2</div>
-                <img src="../src/assets/imgs/modena/modena-2.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
-            </div>
-            <div class="project__page__grid__img__container">
-                <div class="project__page__grid__img__blur">FOTO 3</div>
-                <img src="../src/assets/imgs/modena/modena-3.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
-            </div>
-            <div class="project__page__grid__img__container">
-                <div class="project__page__grid__img__blur">FOTO 4</div>
-                <img src="../src/assets/imgs/modena/modena-4.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
-            </div>
-            <div class="project__page__grid__img__container">
-                <div class="project__page__grid__img__blur">FOTO 1</div>
-                <img src="../src/assets/imgs/modena/modena-5.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
-            </div>
-            <div class="project__page__grid__img__container">
-                <div class="project__page__grid__img__blur">FOTO 2</div>
-                <img src="../src/assets/imgs/modena/modena-6.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
-            </div>
-        </div>
-        <div class="project__page__view-more__container">
-            <button onclick="showMoreCards()" id="projectGridViewMore" class="bm-button--transparent">Ver Mais</button>
-        </div>
+    <p class="project__page__subtitle">Bem-vindo a um novo conceito de morar em Boituva, para uma vida mais prática na
+      cidade de hoje e de amanhã. Imóveis compactos com espaço de sobra para sua liberdade.</p>
 
-        <div class="project__page__specs__container">
-            <div class="project__page__specs__item__container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="auto" viewBox="0 0 188 220" fill="none">
-                    <g opacity="0.2" clip-path="url(#clip0_24_797)">
-                      <path d="M174.25 123.75H188V206.25H-32V13.75H160.5V68.75H174.25V123.75ZM-18.25 192.5H36.75V68.75H146.75V27.5H-18.25V192.5ZM50.5 192.5H105.5V123.75H160.5V82.5H50.5V192.5ZM174.25 192.5V137.5H119.25V192.5H174.25Z" fill="black"/>
-                    </g>
-                  </svg>
-                <div class="project__page__specs__item">
-                    <h4 class="project__page__specs__item__title">250m²</h4>
-                    <h5 class="project__page__specs__item__subtitle">apartamentos até</h5>
-                </div>
-            </div>
-            <div class="project__page__specs__item__container" style="margin-left: -3vw;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="auto" viewBox="0 0 164 220" fill="none">
-                    <g opacity="0.2" clip-path="url(#clip0_24_800)">
-                      <path d="M133.062 182.187V37.8123H95.25V5.58789L-18.1875 25.146V182.187H-49.125V195.937H-11.7852L95.25 210.701V51.5623H119.312V195.937H157.125V182.187H133.062ZM81.5 194.924L-4.4375 183.071V36.7286L81.5 21.9139V194.924Z" fill="black"/>
-                      <path d="M54 99.6875H67.75V127.188H54V99.6875Z" fill="black"/>
-                    </g>
-                  </svg>
-                <div class="project__page__specs__item">
-                    <h4 class="project__page__specs__item__title">3 Dormitórios</h4>
-                    <h5 class="project__page__specs__item__subtitle">a partir de</h5>
-                </div>
-            </div>
-            <div class="project__page__specs__item__container" style="margin-right: 1vw;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="auto" viewBox="0 0 143 220" fill="none">
-                    <g opacity="0.2" clip-path="url(#clip0_24_804)">
-                      <path d="M124.699 109.546L71.5413 90.4407L49.3213 62.5419C47.3892 60.1797 44.9554 58.2773 42.1965 56.9728C39.4377 55.6682 36.423 54.9944 33.3713 55H-21.6012C-24.9633 54.9989 -28.2747 55.8203 -31.2465 57.3925C-34.2184 58.9647 -36.7605 61.24 -38.6512 64.02L-57.2962 91.4032C-61.1796 97.1021 -63.2544 103.839 -63.25 110.736V165C-63.25 166.823 -62.5257 168.572 -61.2364 169.861C-59.947 171.151 -58.1984 171.875 -56.375 171.875H-41.6487C-40.1532 177.775 -36.7329 183.009 -31.929 186.747C-27.1252 190.485 -21.212 192.515 -15.125 192.515C-9.03802 192.515 -3.12483 190.485 1.67905 186.747C6.48293 183.009 9.90321 177.775 11.3988 171.875H54.6013C56.0968 177.775 59.5171 183.009 64.321 186.747C69.1249 190.485 75.038 192.515 81.125 192.515C87.212 192.515 93.1252 190.485 97.929 186.747C102.733 183.009 106.153 177.775 107.649 171.875H122.375C124.198 171.875 125.947 171.151 127.236 169.861C128.526 168.572 129.25 166.823 129.25 165V116.016C129.25 114.6 128.813 113.219 127.998 112.061C127.183 110.903 126.031 110.025 124.699 109.546ZM-15.125 178.75C-17.8445 178.75 -20.5029 177.944 -22.7641 176.433C-25.0253 174.922 -26.7876 172.774 -27.8283 170.262C-28.869 167.749 -29.1413 164.985 -28.6108 162.318C-28.0802 159.65 -26.7707 157.2 -24.8477 155.277C-22.9247 153.354 -20.4747 152.045 -17.8075 151.514C-15.1402 150.984 -12.3756 151.256 -9.8631 152.297C-7.35061 153.337 -5.20316 155.1 -3.69229 157.361C-2.18142 159.622 -1.37499 162.281 -1.37499 165C-1.38045 168.645 -2.83086 172.139 -5.4083 174.717C-7.98575 177.294 -11.4799 178.745 -15.125 178.75ZM81.125 178.75C78.4055 178.75 75.7471 177.944 73.4859 176.433C71.2247 174.922 69.4624 172.774 68.4217 170.262C67.381 167.749 67.1087 164.985 67.6392 162.318C68.1698 159.65 69.4793 157.2 71.4023 155.277C73.3253 153.354 75.7753 152.045 78.4425 151.514C81.1098 150.984 83.8744 151.256 86.3869 152.297C88.8994 153.337 91.0468 155.1 92.5577 157.361C94.0686 159.622 94.875 162.281 94.875 165C94.8696 168.645 93.4192 172.139 90.8417 174.717C88.2643 177.294 84.7701 178.745 81.125 178.75ZM115.5 158.125H107.649C106.153 152.225 102.733 146.991 97.929 143.253C93.1252 139.515 87.212 137.485 81.125 137.485C75.038 137.485 69.1249 139.515 64.321 143.253C59.5171 146.991 56.0968 152.225 54.6013 158.125H11.3988C9.90321 152.225 6.48293 146.991 1.67905 143.253C-3.12483 139.515 -9.03802 137.485 -15.125 137.485C-21.212 137.485 -27.1252 139.515 -31.929 143.253C-36.7329 146.991 -40.1532 152.225 -41.6487 158.125H-49.5V110.736C-49.5007 106.596 -48.255 102.552 -45.925 99.1307L-27.2869 71.7613C-26.6566 70.8337 -25.8091 70.0744 -24.818 69.5495C-23.827 69.0247 -22.7227 68.7502 -21.6012 68.75H33.3713C34.3721 68.7469 35.3615 68.964 36.2692 69.3857C37.1768 69.8075 37.9807 70.4237 38.6238 71.1907L61.9988 100.533C62.7937 101.531 63.8506 102.288 65.0513 102.719L115.5 120.849V158.125Z" fill="black"/>
-                    </g>
-                  </svg>
-                <div class="project__page__specs__item">
-                    <h4 class="project__page__specs__item__title">2 Vagas</h4>
-                    <h5 class="project__page__specs__item__subtitle">vagas cobertas</h5>
-                </div>
-            </div>
+    <div class="project__page__grid__container">
+      <div class="project__page__grid__img__container">
+        <div class="project__page__grid__img__blur">FOTO 1</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-1.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container">
+        <div class="project__page__grid__img__blur">FOTO 2</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-2.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container">
+        <div class="project__page__grid__img__blur">FOTO 3</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-3.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container">
+        <div class="project__page__grid__img__blur">FOTO 4</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-4.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container">
+        <div class="project__page__grid__img__blur">FOTO 5</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-5.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container">
+        <div class="project__page__grid__img__blur">FOTO 6</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-6.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container">
+        <div class="project__page__grid__img__blur">FOTO 7</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-7.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container">
+        <div class="project__page__grid__img__blur">FOTO 8</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-8.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container d-none">
+        <div class="project__page__grid__img__blur">FOTO 9</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-9.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container d-none">
+        <div class="project__page__grid__img__blur">FOTO 10</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-10.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container d-none">
+        <div class="project__page__grid__img__blur">FOTO 11</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-11.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container d-none">
+        <div class="project__page__grid__img__blur">FOTO 12</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-12.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container d-none">
+        <div class="project__page__grid__img__blur">FOTO 13</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-13.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+      <div class="project__page__grid__img__container d-none">
+        <div class="project__page__grid__img__blur">FOTO 14</div>
+        <img loading="lazy" src="../src/assets/imgs/modena/modena-14.webp" alt="Foto da Sacada" class="project__page__grid__img__pic">
+      </div>
+    </div>
+    <div class="project__page__view-more__container">
+      <button onclick="showMoreCards()" id="projectGridViewMore" class="bm-button--transparent">Ver Mais</button>
+    </div>
+
+    <div class="project__page__specs__container">
+      <div class="project__page__specs__item__container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="auto" viewBox="0 0 188 220" fill="none">
+          <g opacity="0.2" clip-path="url(#clip0_24_797)">
+            <path
+              d="M174.25 123.75H188V206.25H-32V13.75H160.5V68.75H174.25V123.75ZM-18.25 192.5H36.75V68.75H146.75V27.5H-18.25V192.5ZM50.5 192.5H105.5V123.75H160.5V82.5H50.5V192.5ZM174.25 192.5V137.5H119.25V192.5H174.25Z"
+              fill="black" />
+          </g>
+        </svg>
+        <div class="project__page__specs__item">
+          <h4 class="project__page__specs__item__title">30 a 112m²</h4>
+          <h5 class="project__page__specs__item__subtitle">apartamentos de</h5>
         </div>
-
-        <div class="project__page__description__container">
-            <img src="../src/assets/imgs/project__image-modena.webp" alt="Fachada Casa Vertical Fradique" class="project__page__description__img">
-            <div class="project__page__description__info">
-                <h4 class="project__page__description__info__title">MÓDENA BOITUVA</h4>
-                <h5 class="project__page__description__info__subtitle">Bem-vindo a um novo conceito de morar em Boituva, para uma vida mais prática na cidade de hoje e de amanhã. Imóveis compactos com espaço de sobra para sua liberdade.</h5>
-                <p class="project__page__description__info__text">Pensado para permitir aos moradores fazer
-                    tudo a pé, da ida ao trabalho ao pão na
-                    padaria. Caso o destino for um pouco mais
-                    distante estamos pertinhos das principais
-                    rodovias que cortam o estado, facilidade na
-                    rotina para quem trabalha fora e precisa
-                    acessar a Rodovia Castelo Branco (SP-280)
-            </div>
+      </div>
+      <div class="project__page__specs__item__container" style="margin-left: -3vw;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="auto" viewBox="0 0 164 220" fill="none">
+          <g opacity="0.2" clip-path="url(#clip0_24_800)">
+            <path
+              d="M133.062 182.187V37.8123H95.25V5.58789L-18.1875 25.146V182.187H-49.125V195.937H-11.7852L95.25 210.701V51.5623H119.312V195.937H157.125V182.187H133.062ZM81.5 194.924L-4.4375 183.071V36.7286L81.5 21.9139V194.924Z"
+              fill="black" />
+            <path d="M54 99.6875H67.75V127.188H54V99.6875Z" fill="black" />
+          </g>
+        </svg>
+        <div class="project__page__specs__item">
+          <h4 class="project__page__specs__item__title">1 e 2 Dorms</h4>
+          <h5 class="project__page__specs__item__subtitle">plantas com</h5>
         </div>
-    </section>
-
-
-    <footer class="footer__container">
-        <div class="sidebar-social-container">
-            <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                <path
-                    d="M8.22201 16.0003C8.22009 17.8889 8.88639 19.7173 10.103 21.1619C11.3196 22.6064 13.008 23.574 14.8694 23.8933C16.7308 24.2126 18.6452 23.8631 20.2737 22.9066C21.9022 21.9501 23.1397 20.4483 23.7673 18.667H16.222V13.3337H29.2953V18.667H29.2887C28.0527 24.7523 22.6727 29.3337 16.222 29.3337C8.85801 29.3337 2.88867 23.3643 2.88867 16.0003C2.88867 8.63633 8.85801 2.667 16.222 2.667C18.4014 2.66544 20.5478 3.19866 22.4731 4.21988C24.3984 5.2411 26.0437 6.71913 27.2647 8.52433L22.894 11.5843C21.9452 10.1502 20.5596 9.05997 18.9425 8.47521C17.3254 7.89046 15.5629 7.84231 13.9163 8.33791C12.2697 8.8335 10.8266 9.84647 9.80095 11.2266C8.77527 12.6068 8.2216 14.2808 8.22201 16.0003Z"
-                    fill="gray" />
-            </svg>
-            <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none">
-                <path
-                    d="M17.5934 2.6665C19.0934 2.6705 19.8548 2.6785 20.5121 2.69717L20.7708 2.7065C21.0694 2.71717 21.3641 2.7305 21.7201 2.7465C23.1388 2.81317 24.1068 3.03717 24.9561 3.3665C25.8361 3.70517 26.5774 4.16384 27.3188 4.90384C27.9968 5.57037 28.5214 6.37662 28.8561 7.2665C29.1854 8.11584 29.4094 9.08384 29.4761 10.5038C29.4921 10.8585 29.5054 11.1532 29.5161 11.4532L29.5241 11.7118C29.5441 12.3678 29.5521 13.1292 29.5548 14.6292L29.5561 15.6238V17.3705C29.5594 18.343 29.5492 19.3156 29.5254 20.2878L29.5174 20.5465C29.5068 20.8465 29.4934 21.1412 29.4774 21.4958C29.4108 22.9158 29.1841 23.8825 28.8561 24.7332C28.5223 25.6235 27.9976 26.43 27.3188 27.0958C26.6521 27.7736 25.8459 28.2982 24.9561 28.6332C24.1068 28.9625 23.1388 29.1865 21.7201 29.2532C21.4037 29.2681 21.0873 29.2814 20.7708 29.2932L20.5121 29.3012C19.8548 29.3198 19.0934 29.3292 17.5934 29.3318L16.5988 29.3332H14.8534C13.8805 29.3365 12.9075 29.3263 11.9348 29.3025L11.6761 29.2945C11.3596 29.2825 11.0431 29.2687 10.7268 29.2532C9.30811 29.1865 8.34011 28.9625 7.48944 28.6332C6.59967 28.299 5.79373 27.7743 5.12811 27.0958C4.4495 26.4296 3.92441 25.6233 3.58944 24.7332C3.26011 23.8838 3.03611 22.9158 2.96944 21.4958C2.95459 21.1795 2.94125 20.863 2.92944 20.5465L2.92277 20.2878C2.8982 19.3156 2.88709 18.3431 2.88944 17.3705V14.6292C2.88572 13.6566 2.8955 12.6841 2.91877 11.7118L2.92811 11.4532C2.93877 11.1532 2.95211 10.8585 2.96811 10.5038C3.03477 9.08384 3.25877 8.11717 3.58811 7.2665C3.92293 6.37571 4.44907 5.5692 5.12944 4.90384C5.7949 4.2258 6.6003 3.70115 7.48944 3.3665C8.34011 3.03717 9.30677 2.81317 10.7268 2.7465C11.0814 2.7305 11.3774 2.71717 11.6761 2.7065L11.9348 2.6985C12.907 2.67481 13.8796 2.66459 14.8521 2.66784L17.5934 2.6665ZM16.2228 9.33317C14.4547 9.33317 12.759 10.0355 11.5087 11.2858C10.2585 12.536 9.55611 14.2317 9.55611 15.9998C9.55611 17.7679 10.2585 19.4636 11.5087 20.7139C12.759 21.9641 14.4547 22.6665 16.2228 22.6665C17.9909 22.6665 19.6866 21.9641 20.9368 20.7139C22.1871 19.4636 22.8894 17.7679 22.8894 15.9998C22.8894 14.2317 22.1871 12.536 20.9368 11.2858C19.6866 10.0355 17.9909 9.33317 16.2228 9.33317ZM16.2228 11.9998C16.7481 11.9998 17.2682 12.1031 17.7536 12.3041C18.2389 12.505 18.6799 12.7996 19.0514 13.1709C19.4229 13.5423 19.7176 13.9832 19.9187 14.4685C20.1198 14.9538 20.2234 15.4739 20.2234 15.9992C20.2235 16.5245 20.1202 17.0446 19.9192 17.53C19.7183 18.0153 19.4237 18.4563 19.0523 18.8278C18.681 19.1993 18.2401 19.494 17.7548 19.6951C17.2695 19.8962 16.7494 19.9998 16.2241 19.9998C15.1632 19.9998 14.1458 19.5784 13.3957 18.8283C12.6455 18.0781 12.2241 17.0607 12.2241 15.9998C12.2241 14.939 12.6455 13.9216 13.3957 13.1714C14.1458 12.4213 15.1632 11.9998 16.2241 11.9998M23.2241 7.33317C22.7821 7.33317 22.3582 7.50877 22.0456 7.82133C21.733 8.13389 21.5574 8.55781 21.5574 8.99984C21.5574 9.44186 21.733 9.86579 22.0456 10.1783C22.3582 10.4909 22.7821 10.6665 23.2241 10.6665C23.6661 10.6665 24.0901 10.4909 24.4026 10.1783C24.7152 9.86579 24.8908 9.44186 24.8908 8.99984C24.8908 8.55781 24.7152 8.13389 24.4026 7.82133C24.0901 7.50877 23.6661 7.33317 23.2241 7.33317Z"
-                    fill="gray" />
-            </svg>
-            <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="32"
-                viewBox="0 0 16 32" fill="none">
-                <g clip-path="url(#clip0_35_302)">
-                    <path
-                        d="M4.19302 32V16.9847H0.222656V11.5784H4.19302V6.9608C4.19302 3.33222 6.53834 0 11.9424 0C14.1305 0 15.7484 0.20976 15.7484 0.20976L15.6209 5.25827C15.6209 5.25827 13.9709 5.24221 12.1703 5.24221C10.2215 5.24221 9.90925 6.14029 9.90925 7.63088V11.5784H15.7758L15.5206 16.9847H9.90925V32H4.19302Z"
-                        fill="gray" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_35_302">
-                        <rect width="15.5532" height="32" fill="white" transform="translate(0.222656)" />
-                    </clipPath>
-                </defs>
-            </svg>
+      </div>
+      <div class="project__page__specs__item__container" style="margin-right: 1vw;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="auto" viewBox="0 0 143 220" fill="none">
+          <g opacity="0.2" clip-path="url(#clip0_24_804)">
+            <path
+              d="M124.699 109.546L71.5413 90.4407L49.3213 62.5419C47.3892 60.1797 44.9554 58.2773 42.1965 56.9728C39.4377 55.6682 36.423 54.9944 33.3713 55H-21.6012C-24.9633 54.9989 -28.2747 55.8203 -31.2465 57.3925C-34.2184 58.9647 -36.7605 61.24 -38.6512 64.02L-57.2962 91.4032C-61.1796 97.1021 -63.2544 103.839 -63.25 110.736V165C-63.25 166.823 -62.5257 168.572 -61.2364 169.861C-59.947 171.151 -58.1984 171.875 -56.375 171.875H-41.6487C-40.1532 177.775 -36.7329 183.009 -31.929 186.747C-27.1252 190.485 -21.212 192.515 -15.125 192.515C-9.03802 192.515 -3.12483 190.485 1.67905 186.747C6.48293 183.009 9.90321 177.775 11.3988 171.875H54.6013C56.0968 177.775 59.5171 183.009 64.321 186.747C69.1249 190.485 75.038 192.515 81.125 192.515C87.212 192.515 93.1252 190.485 97.929 186.747C102.733 183.009 106.153 177.775 107.649 171.875H122.375C124.198 171.875 125.947 171.151 127.236 169.861C128.526 168.572 129.25 166.823 129.25 165V116.016C129.25 114.6 128.813 113.219 127.998 112.061C127.183 110.903 126.031 110.025 124.699 109.546ZM-15.125 178.75C-17.8445 178.75 -20.5029 177.944 -22.7641 176.433C-25.0253 174.922 -26.7876 172.774 -27.8283 170.262C-28.869 167.749 -29.1413 164.985 -28.6108 162.318C-28.0802 159.65 -26.7707 157.2 -24.8477 155.277C-22.9247 153.354 -20.4747 152.045 -17.8075 151.514C-15.1402 150.984 -12.3756 151.256 -9.8631 152.297C-7.35061 153.337 -5.20316 155.1 -3.69229 157.361C-2.18142 159.622 -1.37499 162.281 -1.37499 165C-1.38045 168.645 -2.83086 172.139 -5.4083 174.717C-7.98575 177.294 -11.4799 178.745 -15.125 178.75ZM81.125 178.75C78.4055 178.75 75.7471 177.944 73.4859 176.433C71.2247 174.922 69.4624 172.774 68.4217 170.262C67.381 167.749 67.1087 164.985 67.6392 162.318C68.1698 159.65 69.4793 157.2 71.4023 155.277C73.3253 153.354 75.7753 152.045 78.4425 151.514C81.1098 150.984 83.8744 151.256 86.3869 152.297C88.8994 153.337 91.0468 155.1 92.5577 157.361C94.0686 159.622 94.875 162.281 94.875 165C94.8696 168.645 93.4192 172.139 90.8417 174.717C88.2643 177.294 84.7701 178.745 81.125 178.75ZM115.5 158.125H107.649C106.153 152.225 102.733 146.991 97.929 143.253C93.1252 139.515 87.212 137.485 81.125 137.485C75.038 137.485 69.1249 139.515 64.321 143.253C59.5171 146.991 56.0968 152.225 54.6013 158.125H11.3988C9.90321 152.225 6.48293 146.991 1.67905 143.253C-3.12483 139.515 -9.03802 137.485 -15.125 137.485C-21.212 137.485 -27.1252 139.515 -31.929 143.253C-36.7329 146.991 -40.1532 152.225 -41.6487 158.125H-49.5V110.736C-49.5007 106.596 -48.255 102.552 -45.925 99.1307L-27.2869 71.7613C-26.6566 70.8337 -25.8091 70.0744 -24.818 69.5495C-23.827 69.0247 -22.7227 68.7502 -21.6012 68.75H33.3713C34.3721 68.7469 35.3615 68.964 36.2692 69.3857C37.1768 69.8075 37.9807 70.4237 38.6238 71.1907L61.9988 100.533C62.7937 101.531 63.8506 102.288 65.0513 102.719L115.5 120.849V158.125Z"
+              fill="black" />
+          </g>
+        </svg>
+        <div class="project__page__specs__item">
+          <h4 class="project__page__specs__item__title">1 e 2 Vagas</h4>
+          <h5 class="project__page__specs__item__subtitle">Opções com</h5>
         </div>
-        <img src="../src/assets/imgs/bioma__footer-img.png" alt="Logo Bioma Incorporadora">
-    </footer>
+      </div>
+    </div>
 
-    <script src="../src/js/main.js"></script>
+    <div class="project__page__description__container">
+      <img loading="lazy" src="../src/assets/imgs/fachada-modena.png" alt="Fachada Módena Boituva"
+        class="project__page__description__img">
+      <div class="project__page__description__info">
+        <h4 class="project__page__description__info__title">MÓDENA BOITUVA</h4>
+        <h5 class="project__page__description__info__subtitle">Bem-vindo a um novo conceito de morar em Boituva, para
+          uma vida mais prática na cidade de hoje e de amanhã. Imóveis compactos com espaço de sobra para sua liberdade.
+        </h5>
+        <p class="project__page__description__info__text">Pensado para permitir aos moradores fazer
+          tudo a pé, da ida ao trabalho ao pão na
+          padaria. Caso o destino for um pouco mais
+          distante estamos pertinhos das principais
+          rodovias que cortam o estado, facilidade na
+          rotina para quem trabalha fora e precisa
+          acessar a Rodovia Castelo Branco (SP-280)
+          <br>
+          <br>
+          Praticidade e tecnologia com fechaduras digitais, tomadas USB e uma exuberante vista da praça.
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer__container">
+    <div class="sidebar-social-container">
+      <a href="https://www.youtube.com/channel/UCLxPZ4PJuPJxLNR8h2352Ug">
+        <svg width="28" height="20" viewBox="0 0 46 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M44.5817 5.00692C44.0582 3.03608 42.5161 1.48392 40.558 0.957167C37.0088 0 22.7771 0 22.7771 0C22.7771 0 8.5454 0 4.99615 0.957167C3.03807 1.484 1.4959 3.03608 0.972484 5.00692C0.0214844 8.57917 0.0214844 16.0323 0.0214844 16.0323C0.0214844 16.0323 0.0214844 23.4855 0.972484 27.0578C1.4959 29.0286 3.03807 30.5161 4.99615 31.0428C8.5454 32 22.7771 32 22.7771 32C22.7771 32 37.0087 32 40.558 31.0428C42.5161 30.5161 44.0582 29.0286 44.5817 27.0578C45.5327 23.4855 45.5327 16.0323 45.5327 16.0323C45.5327 16.0323 45.5327 8.57917 44.5817 5.00692ZM18.1225 22.7993V9.26542L30.0174 16.0325L18.1225 22.7993Z"
+            fill="gray" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/company/biomainc/">
+        <svg width="20" height="20" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M29.7358 0H2.30006C1.04291 0 0.0214844 1.03571 0.0214844 2.30714V29.6929C0.0214844 30.9643 1.04291 32 2.30006 32H29.7358C30.9929 32 32.0215 30.9643 32.0215 29.6929V2.30714C32.0215 1.03571 30.9929 0 29.7358 0ZM9.69291 27.4286H4.95006V12.1571H9.70006V27.4286H9.69291ZM7.32148 10.0714C5.80006 10.0714 4.57148 8.83571 4.57148 7.32143C4.57148 5.80714 5.80006 4.57143 7.32148 4.57143C8.83577 4.57143 10.0715 5.80714 10.0715 7.32143C10.0715 8.84286 8.84291 10.0714 7.32148 10.0714ZM27.4715 27.4286H22.7286V20C22.7286 18.2286 22.6929 15.95 20.2643 15.95C17.7929 15.95 17.4143 17.8786 17.4143 19.8714V27.4286H12.6715V12.1571H17.2215V14.2429H17.2858C17.9215 13.0429 19.4715 11.7786 21.7786 11.7786C26.5786 11.7786 27.4715 14.9429 27.4715 19.0571V27.4286Z"
+            fill="gray" />
+        </svg>
+
+      </a>
+      <a href="https://www.instagram.com/biomaincorporadora/">
+        <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32"
+          fill="none">
+          <path
+            d="M17.5934 2.6665C19.0934 2.6705 19.8548 2.6785 20.5121 2.69717L20.7708 2.7065C21.0694 2.71717 21.3641 2.7305 21.7201 2.7465C23.1388 2.81317 24.1068 3.03717 24.9561 3.3665C25.8361 3.70517 26.5774 4.16384 27.3188 4.90384C27.9968 5.57037 28.5214 6.37662 28.8561 7.2665C29.1854 8.11584 29.4094 9.08384 29.4761 10.5038C29.4921 10.8585 29.5054 11.1532 29.5161 11.4532L29.5241 11.7118C29.5441 12.3678 29.5521 13.1292 29.5548 14.6292L29.5561 15.6238V17.3705C29.5594 18.343 29.5492 19.3156 29.5254 20.2878L29.5174 20.5465C29.5068 20.8465 29.4934 21.1412 29.4774 21.4958C29.4108 22.9158 29.1841 23.8825 28.8561 24.7332C28.5223 25.6235 27.9976 26.43 27.3188 27.0958C26.6521 27.7736 25.8459 28.2982 24.9561 28.6332C24.1068 28.9625 23.1388 29.1865 21.7201 29.2532C21.4037 29.2681 21.0873 29.2814 20.7708 29.2932L20.5121 29.3012C19.8548 29.3198 19.0934 29.3292 17.5934 29.3318L16.5988 29.3332H14.8534C13.8805 29.3365 12.9075 29.3263 11.9348 29.3025L11.6761 29.2945C11.3596 29.2825 11.0431 29.2687 10.7268 29.2532C9.30811 29.1865 8.34011 28.9625 7.48944 28.6332C6.59967 28.299 5.79373 27.7743 5.12811 27.0958C4.4495 26.4296 3.92441 25.6233 3.58944 24.7332C3.26011 23.8838 3.03611 22.9158 2.96944 21.4958C2.95459 21.1795 2.94125 20.863 2.92944 20.5465L2.92277 20.2878C2.8982 19.3156 2.88709 18.3431 2.88944 17.3705V14.6292C2.88572 13.6566 2.8955 12.6841 2.91877 11.7118L2.92811 11.4532C2.93877 11.1532 2.95211 10.8585 2.96811 10.5038C3.03477 9.08384 3.25877 8.11717 3.58811 7.2665C3.92293 6.37571 4.44907 5.5692 5.12944 4.90384C5.7949 4.2258 6.6003 3.70115 7.48944 3.3665C8.34011 3.03717 9.30677 2.81317 10.7268 2.7465C11.0814 2.7305 11.3774 2.71717 11.6761 2.7065L11.9348 2.6985C12.907 2.67481 13.8796 2.66459 14.8521 2.66784L17.5934 2.6665ZM16.2228 9.33317C14.4547 9.33317 12.759 10.0355 11.5087 11.2858C10.2585 12.536 9.55611 14.2317 9.55611 15.9998C9.55611 17.7679 10.2585 19.4636 11.5087 20.7139C12.759 21.9641 14.4547 22.6665 16.2228 22.6665C17.9909 22.6665 19.6866 21.9641 20.9368 20.7139C22.1871 19.4636 22.8894 17.7679 22.8894 15.9998C22.8894 14.2317 22.1871 12.536 20.9368 11.2858C19.6866 10.0355 17.9909 9.33317 16.2228 9.33317ZM16.2228 11.9998C16.7481 11.9998 17.2682 12.1031 17.7536 12.3041C18.2389 12.505 18.6799 12.7996 19.0514 13.1709C19.4229 13.5423 19.7176 13.9832 19.9187 14.4685C20.1198 14.9538 20.2234 15.4739 20.2234 15.9992C20.2235 16.5245 20.1202 17.0446 19.9192 17.53C19.7183 18.0153 19.4237 18.4563 19.0523 18.8278C18.681 19.1993 18.2401 19.494 17.7548 19.6951C17.2695 19.8962 16.7494 19.9998 16.2241 19.9998C15.1632 19.9998 14.1458 19.5784 13.3957 18.8283C12.6455 18.0781 12.2241 17.0607 12.2241 15.9998C12.2241 14.939 12.6455 13.9216 13.3957 13.1714C14.1458 12.4213 15.1632 11.9998 16.2241 11.9998M23.2241 7.33317C22.7821 7.33317 22.3582 7.50877 22.0456 7.82133C21.733 8.13389 21.5574 8.55781 21.5574 8.99984C21.5574 9.44186 21.733 9.86579 22.0456 10.1783C22.3582 10.4909 22.7821 10.6665 23.2241 10.6665C23.6661 10.6665 24.0901 10.4909 24.4026 10.1783C24.7152 9.86579 24.8908 9.44186 24.8908 8.99984C24.8908 8.55781 24.7152 8.13389 24.4026 7.82133C24.0901 7.50877 23.6661 7.33317 23.2241 7.33317Z"
+            fill="gray" />
+        </svg>
+      </a>
+      <a href="https://www.facebook.com/biomaincorporadora">
+        <svg class="sidebar-social-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="32" viewBox="0 0 16 32"
+          fill="none">
+          <g clip-path="url(#clip0_35_302)">
+            <path
+              d="M4.19302 32V16.9847H0.222656V11.5784H4.19302V6.9608C4.19302 3.33222 6.53834 0 11.9424 0C14.1305 0 15.7484 0.20976 15.7484 0.20976L15.6209 5.25827C15.6209 5.25827 13.9709 5.24221 12.1703 5.24221C10.2215 5.24221 9.90925 6.14029 9.90925 7.63088V11.5784H15.7758L15.5206 16.9847H9.90925V32H4.19302Z"
+              fill="gray" />
+          </g>
+          <defs>
+            <clipPath id="clip0_35_302">
+              <rect width="15.5532" height="32" fill="white" transform="translate(0.222656)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+    <a href="../index.html">
+      <img loading="lazy" src="../src/assets/imgs/bioma__footer-img.png" alt="Logo Bioma Incorporadora">
+    </a>
+  </footer>
+
+  <script src="../src/js/main.js"></script>
 </body>
 
 </html>

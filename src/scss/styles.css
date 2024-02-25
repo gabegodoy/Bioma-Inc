@@ -25,18 +25,9 @@
   height: 6px;
   transform: translateY(12px);
   background-color: #808082;
-  background-color: #525252;
+  background-color: hsl(86, 64%, 62%);
   display: block;
   border-radius: 9px;
-}
-
-#homeSidebar.nav .trigger span {
-  background-color: #cdced0;
-}
-
-#homeSidebar.nav .trigger span::before,
-#homeSidebar.nav .trigger span::after {
-  background-color: #FFF;
 }
 
 .nav .trigger span::before,
@@ -46,7 +37,7 @@
   width: 100%;
   height: 6px;
   background-color: #525252;
-  background-color: #808082;
+  background-color: #8bc441;
   display: block;
   border-radius: 9px;
 }
@@ -261,7 +252,11 @@
 .sidebar-social-container {
   display: flex;
   justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
   gap: 1rem;
+  padding-left: 48px;
   position: relative;
   bottom: 0;
 }
@@ -367,25 +362,6 @@
   align-items: center;
   margin-bottom: 5rem;
 }
-.projects__container .project__status {
-  align-self: center;
-  width: 5%;
-  height: -moz-max-content;
-  height: max-content;
-}
-.projects__container .project__status p {
-  rotate: -90deg;
-  color: #595959;
-  opacity: 0.6;
-  text-align: center;
-  font-family: "Myriad Pro";
-  font-size: 0.8rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 4.8px;
-  text-transform: uppercase;
-}
 .projects__container .project__info__container {
   text-align: right;
   width: 55%;
@@ -409,7 +385,33 @@
   font-weight: 800;
   line-height: normal;
   text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+.projects__container .project__info__status {
+  color: #595959;
+  opacity: 0.8;
+  border: solid #595959 1px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 6px;
+  font-family: "Myriad Pro";
+  font-size: 0.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   margin-bottom: 1.85rem;
+}
+.projects__container .project__info__status.status--ready {
+  color: white;
+  border-color: white;
+  background-color: #8bc441;
+}
+.projects__container .project__info__status.status--progress {
+  color: white;
+  border-color: white;
+  background-color: #406caa;
 }
 .projects__container .project__info__description {
   color: #222;
@@ -469,7 +471,7 @@
 }
 .projects__container .projects__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   margin-top: 8rem;
 }
@@ -502,11 +504,10 @@
 .header__project {
   position: absolute;
   top: 1rem;
-  width: calc(100% - 8vw);
+  width: calc(100% - 16vw);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 19%;
   left: 8vw;
 }
 .header__img__bioma {
@@ -516,6 +517,7 @@
 .header__img__project {
   height: 5rem;
   width: auto;
+  padding-left: 1rem;
 }
 
 .project__page__container {
@@ -655,7 +657,6 @@
   font-style: normal;
   font-weight: 300;
   line-height: 160%; /* 38.4px */
-  text-transform: capitalize;
   text-align: justify;
 }
 
@@ -1074,7 +1075,7 @@
 }
 
 .swiper-slide {
-  transition: transform 3s;
+  transition: transform 5s;
 }
 
 .swiper-slide.zoomed {
@@ -1084,7 +1085,7 @@
 .home__slide__container {
   position: absolute;
   left: 8vw; /* Ajuste conforme necessário */
-  top: 45vh; /* Ajuste conforme necessário */
+  bottom: 30vh; /* Ajuste conforme necessário */
   color: #fff;
   z-index: 1000;
   width: 70%;
@@ -1097,6 +1098,11 @@
   font-weight: 700;
   line-height: normal;
 }
+.home__slide__title__img {
+  position: static !important;
+  width: auto !important;
+  height: 10rem !important;
+}
 .home__slide__subtitle {
   color: #FFF;
   font-family: "Myriad Pro";
@@ -1105,7 +1111,7 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 4.8px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
 }
 .home__slide__text {
   font-family: Inter;
@@ -1113,10 +1119,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 4.8px;
+  letter-spacing: 2.8px;
   margin-top: 1.25rem;
   margin-bottom: 3rem;
-  display: none;
 }
 
 .slide-title {
@@ -1292,6 +1297,170 @@
   background-color: #ffffff;
   color: #000000;
   border: solid 1px #000000;
+}
+
+h3 {
+  color: #595959;
+  font-family: "Myriad Pro";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 2rem;
+}
+
+.concept__page__container {
+  padding: 10vh 8vw;
+}
+
+.concept__container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.concept__info__container {
+  text-align: left;
+  width: 55%;
+  margin: 3rem 0;
+}
+.concept__info__container__image__cont {
+  width: 40%;
+}
+.concept__info__title__image {
+  width: 90%;
+  padding-bottom: 1rem;
+}
+.concept__info__overtitle {
+  color: #222;
+  font-family: "Myriad Pro";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 1rem;
+}
+.concept__info__title {
+  color: #222;
+  font-family: Inter;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 1.85rem;
+}
+.concept__info__subtitle {
+  color: #222;
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+}
+.concept__info__description {
+  color: #595959;
+  font-family: "Inter";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 4.8px;
+}
+.concept__info__quote {
+  color: #595959;
+  font-family: "Inter";
+  font-size: 0.75rem;
+  text-align: right;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 4.8px;
+}
+.concept__info__autor {
+  color: #222;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+  text-align: right;
+}
+.concept__info__image {
+  width: 100%;
+  height: auto;
+}
+.concept__info__sectionTitle {
+  color: #595959;
+  font-family: "Myriad Pro";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 2rem;
+}
+.concept__info__sectionTitle__center {
+  text-align: center !important;
+}
+.concept__info__sectionSubtitle {
+  color: #222;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 3rem;
+  margin-top: 1.5rem;
+}
+.concept__info__inovation {
+  color: #595959;
+  font-family: "Myriad Pro";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+.concept__info__award {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.concept__info__textAward {
+  color: #222;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: right;
+  margin-top: 1rem;
+}
+.concept__info__list {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+  color: #333;
+}
+.concept__info__list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #999; /* Cinza */
+  font-size: 1.5rem;
 }
 
 .d-none {

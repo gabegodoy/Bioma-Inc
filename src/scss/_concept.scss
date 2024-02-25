@@ -1,0 +1,167 @@
+h3 {
+  color: #595959;
+  font-family: "Myriad Pro";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  margin-bottom: 2rem;
+}
+
+.concept__page__container{
+  padding: 10vh 8vw;
+}
+
+.concept {
+  &__container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__info {
+    &__container {
+      text-align: left;
+      width: 55%;
+      margin: 3rem 0;
+      &__image__cont{
+        width: 40%;
+      }
+    }
+    &__title__image{
+      width: 90%;
+      padding-bottom: 1rem;
+    }
+    &__overtitle {
+      color: #222;
+      font-family: "Myriad Pro";
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 4.8px;
+      margin-bottom: 1rem;
+    }
+    &__title {
+      color: #222;
+      font-family: Inter;
+      font-size: 3.5rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-bottom: 1.85rem;
+    }
+    &__subtitle {
+      color: #222;
+      font-family: Inter;
+      font-size: 1.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 4.8px;
+      margin-bottom: 3rem;
+      margin-top: 1.5rem;
+    }
+    &__description {
+      color: #595959;
+      font-family: "Inter";
+      font-size: 1.1rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 140%; /* 33.6px */
+      letter-spacing: 4.8px;
+    }
+    &__quote {
+      color: #595959;
+      font-family: "Inter";
+      font-size: 0.75rem;
+      text-align: right;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 140%; /* 33.6px */
+      letter-spacing: 4.8px;
+    }
+    &__autor {
+      color: #222;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 4.8px;
+      margin-bottom: 3rem;
+      margin-top: 1.5rem;
+      text-align: right;
+    }
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+    &__sectionTitle {
+      color: #595959;
+      font-family: "Myriad Pro";
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 4.8px;
+      margin-bottom: 2rem;
+      &__center {
+        text-align: center !important;
+      }
+    }
+    &__sectionSubtitle {
+      color: #222;
+      font-family: Inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 4.8px;
+      margin-bottom: 3rem;
+      margin-top: 1.5rem;
+    }
+    &__inovation {
+      color: #595959;
+      font-family: "Myriad Pro";
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 4.8px;
+      margin-bottom: 2rem;
+      text-align: right;
+    }
+    &__award {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__textAward {
+      color: #222;
+      font-family: Inter;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-align: right;
+      margin-top: 1rem;
+    }
+    &__list {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+      color: #333;
+      li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #999; /* Cinza */
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
