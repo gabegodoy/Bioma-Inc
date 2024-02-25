@@ -19,9 +19,11 @@ var mySwiper = new Swiper('.swiper-container', {
     },
     // Pagination, navigation, and scrollbar options remain the same
     pagination: {
-        el: '.swiper-pagination',
-        type: 'progressbar', // Usa uma barra de progresso como a página de paginação
-      
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -31,3 +33,23 @@ var mySwiper = new Swiper('.swiper-container', {
       el: '.swiper-scrollbar',
     },
   });
+
+  setTimeout(() => {
+    let bullets = document.querySelectorAll('.swiper-pagination-bullet')
+    bullets.forEach(bullet => {
+      switch (bullet.textContent) {
+        case '1':
+          bullet.textContent = 'CONCEITO'
+          break;
+        case '2':
+          bullet.textContent = 'FRADIQUE'
+          break;
+        case '3':
+          bullet.textContent = 'APINAJÉS'
+          break;
+        case '4':
+          bullet.textContent = 'LAPA'
+          break;
+      }
+    });
+  }, 50);

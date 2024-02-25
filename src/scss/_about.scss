@@ -17,7 +17,8 @@
 
     &__title {
         color: #595959;
-        font-family: Inter;
+        font-family: "Kanit", sans-serif;
+
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 800;
@@ -52,7 +53,8 @@
 
                 p {
                     color: #000;
-                    font-family: Inter;
+                    font-family: "Kanit", sans-serif;
+
                     font-size: 1.25rem;
                     font-style: normal;
                     font-weight: 900;
@@ -77,7 +79,8 @@
             &__title {
                 margin-bottom: 1.25rem;
                 color: #000;
-                font-family: Inter;
+                font-family: "Kanit", sans-serif;
+
                 font-size: 1.75rem;
                 font-style: normal;
                 font-weight: 800;
@@ -88,10 +91,11 @@
 
             &__text {
                 color: #000;
-                font-family: Inter;
+                font-family: "Kanit", sans-serif;
+
                 font-size: 1rem;
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: 160%;
 
                 span {
@@ -117,7 +121,8 @@
 
         &__title {
             color: #000;
-            font-family: Inter;
+            font-family: "Kanit", sans-serif;
+
             font-size: 2.5rem;
             font-style: normal;
             font-weight: 800;
@@ -144,15 +149,16 @@
         }
 
         &__title {
-            color: #000;
-            font-family: Inter;
+            color: #595959;
+            font-family: "Kanit", sans-serif;
+
             font-size: 2.5rem;
             font-style: normal;
-            font-weight: 800;
+            font-weight: 600;
             line-height: normal;
             text-transform: uppercase;
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 5rem;
         }
 
         &__perkins {
@@ -189,7 +195,8 @@
 
                 &__text {
                     color: #000;
-                    font-family: Inter;
+                    font-family: "Kanit", sans-serif;
+
                     font-size: 1.5rem;
                     font-style: normal;
                     font-weight: 400;
@@ -204,7 +211,8 @@
                 &__reference {
                     color: #000;
                     text-align: right;
-                    font-family: Inter;
+                    font-family: "Kanit", sans-serif;
+
                     font-size: .75rem;
                     font-style: normal;
                     font-weight: 400;
@@ -224,7 +232,8 @@
 
         &__text {
             color: #000;
-            font-family: 'Inter';
+            font-family:  "Kanit", sans-serif;
+;
             font-size: 1.5rem;
             font-style: normal;
             font-weight: 400;
@@ -255,6 +264,8 @@
 
 .bioma-title { font-size: 2.5em; font-weight: bold; color: black; margin-bottom: 2rem; }
 
-.bioma-subtitle { font-size: 1.2em; color: black; margin-top: 0em; margin-bottom: 1em; font-family: 'Inter'; font-weight: 600;}
+.bioma-subtitle { font-size: 1.2em; color: black; margin-top: 0em; margin-bottom: 1em; font-family:  "Kanit", sans-serif;
+; font-weight: 600;}
 
-.bioma-text { font-size: 1em; color: black; line-height: 1.5; font-family: 'Inter';}
+.bioma-text { font-size: 1em; color: black; line-height: 1.5; font-family:  "Kanit", sans-serif;
+;}
