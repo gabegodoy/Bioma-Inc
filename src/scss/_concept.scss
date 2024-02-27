@@ -11,6 +11,10 @@ h3 {
 
 .concept__page__container{
   padding: 10vh 8vw;
+  @media screen and (max-width: 460px) {
+   padding-top: 5vh;         
+   padding-bottom: 0;         
+  }
 }
 
 .concept {
@@ -19,14 +23,42 @@ h3 {
     gap: 3rem;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 460px) {
+      gap: 0;
+     flex-direction: column;       
+    }
+    &.variant{
+      @media screen and (max-width: 460px) {
+       flex-direction: column-reverse;     
+      }
+    }
+  }
+  &__body{
+    width: 70%;
+    @media screen and (max-width: 460px) {
+      width: 100%;       
+    }
   }
   &__info {
+    &__img{
+      @media screen and (max-width: 460px) {
+       margin-bottom: 2rem;     
+      }
+    }
     &__container {
       text-align: left;
       width: 55%;
       margin: 3rem 0;
+      @media screen and (max-width: 460px) {
+        margin-top: 0;
+        width: 100%;
+      }
       &__image__cont{
         width: 40%;
+        @media screen and (max-width: 460px) {
+          margin-top: 0;
+          width: 100%;
+        }
       }
     }
     &__title__image{
@@ -65,6 +97,13 @@ h3 {
       letter-spacing: 4.8px;
       margin-bottom: 3rem;
       margin-top: 1.5rem;
+      @media screen and (max-width: 460px) {
+        margin-top: 0;   
+      }
+      &.variant{
+        margin-top: 2rem;
+        margin-bottom: 0;
+      }
     }
     &__description {
       color: #595959;
@@ -86,6 +125,9 @@ h3 {
       font-weight: 300;
       line-height: 140%; /* 33.6px */
       letter-spacing: 4.8px;
+      @media screen and (max-width: 460px) {
+        font-size: 1rem;   
+      }
     }
     &__autor {
       color: #222;

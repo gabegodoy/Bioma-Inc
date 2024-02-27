@@ -1,17 +1,30 @@
 .projects__container{
     padding: 15vh 8vw 5vh 8vw;
+    @media screen and (max-width: 460px) {
+        padding-top: 5vh;       
+        padding-bottom: 0;       
+    }
 
     .project{
         &__container{
         display: flex;
         align-items: center;
         margin-bottom: 5rem;
+        @media screen and (max-width: 460px) {
+         flex-direction: column-reverse !important;
+         gap: 3rem !important;   
+        }
         }
         &__info{
             &__container{
                 text-align: right;
                 width: 55%;
                 margin-right: 3rem;
+                @media screen and (max-width: 460px) {
+                    width: 100% !important;
+                    margin-right: 0 !important;
+                    margin-left: 0 !important;
+                }
             }
             &__overtitle{
                 color: #222;
@@ -88,6 +101,9 @@
                 &:hover{
                     background-size: 160%;       
                 }
+                @media screen and (max-width: 460px) {
+                    width: 100%;
+                }
             }
             &__container.fradique{
                 background-image: url('../assets/imgs/project__image-fradique.webp');
@@ -140,9 +156,17 @@
         justify-content: space-around;
         align-items: flex-start;
         margin-top: 8rem;
+        @media screen and (max-width: 460px) {
+         flex-direction: column-reverse;   
+        }
 
         &__item{
             width: 25%;
+            @media screen and (max-width: 460px) {
+                width: 100%;
+                margin-bottom: 1.5rem;
+                text-align: center;
+            }
             &__title{
                 color: #222;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

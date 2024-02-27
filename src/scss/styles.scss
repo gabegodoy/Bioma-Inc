@@ -15,6 +15,9 @@
 
 html{
     font-family: "Kanit", sans-serif;
+    @media screen and (max-width: 460px) {
+        font-size: 14px;       
+    }
 }
 
 .d-none{

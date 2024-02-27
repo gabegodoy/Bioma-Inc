@@ -2,6 +2,10 @@
   &__container {
     padding: 10vh 8vw;
     padding-top: 15vh;
+    @media screen and (max-width: 460px) {
+     padding-top: 5vh;       
+     padding-bottom: 0;       
+    }
   }
   &__overtitle {
     color: #595959;
@@ -21,6 +25,9 @@
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    @media screen and (max-width: 460px) {
+     margin-top: 2rem;       
+    }
   }
   &__map {
     margin: 5.675vh 0vw;
@@ -35,6 +42,11 @@
     width: 30%;
     gap: 1.5rem;
     
+    @media screen and (max-width: 460px) {
+      width: 100%;
+            
+    }
+
     &__address,
     &__tel,
     &__email {
@@ -64,17 +76,29 @@
   }
   &__form {
     margin-top: 4rem;
+    @media screen and (max-width: 460px) {
+      margin-top: 2rem;     
+    }
     &__message{
       width: 30%;
+      @media screen and (max-width: 460px) {
+        width: 100%;
+      }
     }
     &__contacts{
       width: 30%;
+      @media screen and (max-width: 460px) {
+        width: 100%;
+      }
     }
     form {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
+        @media screen and (max-width: 460px) {
+         flex-direction: column;   
+        }
     }
     .contact__page__form__select,
     input[type="text"],

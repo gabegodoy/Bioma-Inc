@@ -20,6 +20,9 @@
         height: 5rem;
         width: auto;
         padding-left: 1rem;
+        @media screen and (max-width: 460px) {
+            display: none;   
+        }
     }
 }
 
@@ -27,6 +30,11 @@
     &__container{
         padding: 10vh 8vw;
         padding-top: 15vh;
+        @media screen and (max-width: 460px) {
+            padding-top: 5vh;
+            padding-bottom: 0;
+            
+        }
     }
 
     &__overtitle{
@@ -138,6 +146,9 @@
             justify-content: space-between;
             gap: 2rem;
             padding-top: 2.5rem;
+            @media screen and (max-width: 460px) {
+                flex-direction: column;
+            }
         }
         &__img{
             aspect-ratio: 3/4;
@@ -145,6 +156,9 @@
             height: auto;
             object-fit: cover;
             object-position: bottom;
+            @media screen and (max-width: 460px) {
+                width: 100%;
+            }
         }
         &__info{
             &__title{

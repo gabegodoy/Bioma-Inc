@@ -252,6 +252,10 @@
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    
+    @media screen and (max-width: 460px) {
+        font-size: 1.8rem;
+    }
 }
 
 .sidebar {
@@ -277,6 +281,9 @@
         padding-left: 48px;
         position: relative;
         bottom: 0;
+        @media screen and (max-width: 460px) {
+            padding-left: 0;
+        }
     }
 
     &-icon {
