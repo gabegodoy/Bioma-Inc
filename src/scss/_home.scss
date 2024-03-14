@@ -132,3 +132,15 @@
   line-height: normal;
   letter-spacing: 0.3rem;
 }
+
+.swiper-image-bg{
+  @media screen and (max-width: 460px) {
+    display: none !important;
+  }
+  &.mobile{
+    display: none !important;
+    @media screen and (max-width: 460px) {
+      display: block !important;
+    }
+  }
+}

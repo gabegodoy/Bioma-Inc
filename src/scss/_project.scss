@@ -81,7 +81,8 @@
             &__container{
                 aspect-ratio: 3/4;
                 width: calc(25% - .75rem);
-                background-color: #c1c1c1;
+                background-color: #F5F5F5;
+                color: #F5F5F5;
                 position: relative;
             }
             &__blur{
@@ -196,4 +197,5 @@
             }
         }
     }
+    
 }
